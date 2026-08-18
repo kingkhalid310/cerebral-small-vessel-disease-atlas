@@ -3,5 +3,4 @@ __pycache__/
 *.py[cod]
 .venv/
 validation-report.json
-docs/CNAME
 tmp/

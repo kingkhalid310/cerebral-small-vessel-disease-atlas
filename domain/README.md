@@ -8,7 +8,7 @@ The prepared address is `csvd.medics-global.com`. It is intentionally not activa
 2. At the DNS provider for `medics-global.com`, create a `CNAME` record:
    - Host/name: `csvd`
    - Target/value: `kingkhalid310.github.io`
-3. Copy `domain/CNAME.example` to `docs/CNAME` and commit it.
+3. Confirm that the committed `docs/CNAME` contains only `csvd.medics-global.com`.
 4. In GitHub Pages settings, set the custom domain to `csvd.medics-global.com`.
 5. Wait for DNS and certificate issuance, then enable **Enforce HTTPS**.
 6. Verify both the GitHub Pages address and the custom domain before announcing launch.
