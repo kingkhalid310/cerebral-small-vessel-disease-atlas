@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Structured record from the cSVD Evidence Atlas."><title>Record · cSVD Evidence Atlas</title><link rel="stylesheet" href="assets/styles.css"></head>
+<body>
+  <div id="site-header"></div><main id="main"><div id="record"><section class="page-hero"><div class="container"><p class="eyebrow">Loading record</p><h1>Please wait…</h1></div></section></div></main><div id="site-footer"></div>
+  <script src="assets/app.js"></script>
+  <script>
+    Atlas.shell('explore');
+    const id = new URLSearchParams(location.search).get('id');
+    Atlas.catalog().then(data => {
+      const byId = new Map(data.records.map(r=>[r.id,r])); const r = byId.get(id);
+      if (!r) { document.getElementById('record').innerHTML='<section class="section"><div class="narrow empty">Record not found. <a href="explore.html">Return to the explorer.</a></div></section>'; return; }
+      document.title = `${r.id} · ${r.title} · cSVD Evidence Atlas`;
+      const fields = r.fields.map(f=>`<div class="field"><dt>${Atlas.esc(f.label)}</dt><dd>${Atlas.linkify(f.value,byId)}</dd></div>`).join('');
+      document.getElementById('record').innerHTML = `<section class="page-hero"><div class="container"><p class="eyebrow">${Atlas.esc(Atlas.human(r.type))} · ${Atlas.esc(r.id)}</p><h1>${Atlas.esc(r.title)}</h1><p>${Atlas.esc(r.summary)}</p><div>${Atlas.badge(r.state)}${Atlas.badge(r.domain)}${Atlas.badge(r.priority)}</div></div></section><section class="section"><div class="container record-shell"><dl class="record-fields">${fields}</dl><aside class="record-aside"><div class="card"><h3>Read this record carefully</h3><p>Interpret it within the stated population, reference standard, limitations, and evidence status.</p></div><a class="button" href="explore.html?type=${encodeURIComponent(r.type)}">More ${Atlas.esc(Atlas.human(r.type))} records</a></aside></div></section>`;
+    }).catch(error => document.getElementById('record').innerHTML=`<section class="section"><div class="narrow empty">${Atlas.esc(error.message)}</div></section>`);
+  </script>
+</body>
+</html>

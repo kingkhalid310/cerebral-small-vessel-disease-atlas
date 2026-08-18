@@ -1,0 +1,10 @@
+construct_id,label,definition,may_support,must_not_be_equated_with
+K001,Observation,"A recorded signal on imaging, fluid assay, clinical examination, physiology, genetics, or tissue",Phenotype,Etiology
+K002,Phenotype,A reproducibly described pattern of observations,"Etiologic probability, prognosis",Pathology diagnosis
+K003,Target pathology,The vessel-wall or tissue condition the investigation aims to identify,Mechanism and outcome models,Any one downstream lesion
+K004,Mechanism,"A proposed causal process linking exposures, vessel injury, tissue injury, and outcomes",Intervention target,Association
+K005,Biomarker,A measured characteristic used for a defined context of use,"Detection, prognosis, monitoring, or response",Clinical utility
+K006,Diagnostic criterion,A rule estimating disease probability in a defined population and presentation,Classification,Universal screening
+K007,Reference standard,The method used to determine target-condition status,Validation,Perfect truth when sampling is incomplete
+K008,Outcome,A future event or state the model seeks to predict or change,Prognostic or trial utility,Etiologic specificity
+K009,Clinical action,"A decision integrating evidence, values, alternatives, and competing risks",Care pathway,Biomarker positivity alone

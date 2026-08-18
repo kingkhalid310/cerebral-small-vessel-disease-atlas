@@ -1,0 +1,13 @@
+queue_id,priority,object_type,object_id,task,reason,done_when,owner,status
+U001,P0,study,R052,Obtain and duplicate-extract full text for nonhemorrhagic Boston v2.0 validation,Central transportability evidence currently below full-text depth,Two extractions reconciled; QUADAS appraisal completed,unassigned,open
+U002,P0,question,Q013,Build comprehensive MRI-to-pathology arteriolosclerosis search,Core knowledge-base purpose and largest diagnostic gap,"Database searches, screening, and evidence table completed",unassigned,open
+U003,P0,method,Q001,"Inventory neuropathology definitions, regions, stains, and aggregation rules",Reference-standard heterogeneity may explain conflicting results,Construct crosswalk and consensus candidates created,unassigned,open
+U004,P0,validation,DP002,Locate independent ARTS pathology validation or confirm absence,Prevents development evidence from being treated as external validation,Search documented and profile updated,unassigned,open
+U005,P1,cohort,COH002,Map participant overlap across ROSMAP-derived publications,Avoids counting reused samples as independent replication,Publication-to-subset lineage documented,unassigned,open
+U006,P1,question,Q008,Extract lesion-level cortical versus juxtacortical pathology evidence,May refine CAA specificity,All located lesion-matched studies appraised,unassigned,open
+U007,P1,question,Q025,Build CAA-versus-AD fluid biomarker evidence table,Field is active and easily overinterpreted,"Assay, comparator, reference, and accuracy fields extracted",unassigned,open
+U008,P1,question,Q037,Add current therapy-specific ARIA risk and monitoring evidence,High clinical relevance and rapidly changing evidence,Current workgroup plus drug-specific authoritative sources mapped,unassigned,open
+U009,P1,question,Q031,Extract mixed CAA-arteriolosclerosis imaging-pathology interactions,Directly addresses false etiologic exclusivity,At least two independent cohorts or explicit evidence gap recorded,unassigned,open
+U010,P2,method,all,Add second-reviewer fields and adjudication log,Required before publication-grade claims,Duplicate workflow piloted on all P0 studies,unassigned,open
+U011,P2,automation,all,Add saved PubMed query export and deduplication workflow,Supports living updates,New citations can be imported without overwriting reviewed records,unassigned,open
+U012,P2,website,all,"Prototype question, claim, cohort, and diagnostic-profile views from JSON",Structured model is now stable enough for a read-only site prototype,No-PHI static prototype renders from generated exports,unassigned,open

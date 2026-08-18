@@ -1,0 +1,12 @@
+link_id,study_id,cohort_id,role,overlap_note
+SC001,S001,COH001,derivation and internal/temporal/geographic validation,Subsets are related within one coordinated dataset
+SC002,S006,COH002,ARTS pathology-linked development,ROSMAP-derived; not independent of other ROSMAP analyses
+SC003,S008,COH002,outcome association,Check participant overlap with ARTS development
+SC004,S008,COH006,outcome association/transport,ADNI is distinct from ROSMAP but AD-selected
+SC005,S009,COH002,autopsy association,Repeated ROSMAP evidence
+SC006,S012,COH002,community Boston validation,Community/autopsy subset
+SC007,S013,COH003,nonhemorrhagic Boston validation,Independent setting; small sample
+SC008,S002,COH007,CT/genetic criterion development,Lobar ICH-specific
+SC009,S017,COH005,multisite CVR validation,Three site analyses under one consortium protocol
+SC010,S018,COH004,longitudinal CVR prediction,Same MSS3 platform as related CVR analyses
+SC011,S021,COH008,CAA-ri comparative phenotype,Specialist referral evidence

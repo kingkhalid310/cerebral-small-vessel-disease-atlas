@@ -1,0 +1,32 @@
+version: 0.2
+updated: 2026-08-18
+entities:
+  pathology:
+    description: Vessel-wall or tissue abnormality demonstrated by a reference method.
+    examples: [cerebral_amyloid_angiopathy, brain_arteriolosclerosis, ADNC, LATE_NC]
+  phenotype:
+    description: Observable pattern without assuming a unique cause.
+    examples: [strictly_lobar_hemorrhagic_pattern, deep_perforator_pattern, diffuse_white_matter_injury]
+  lesion:
+    description: A focal or diffuse tissue/imaging abnormality.
+    examples: [CMB, cSS, ICH, lacune, recent_small_subcortical_infarct, WMH, PVS, cortical_microinfarct]
+  compartment:
+    description: Anatomical location needed for etiologic reasoning.
+    examples: [leptomeningeal, cortical_ribbon, juxtacortical_white_matter, deep_gray, deep_white_matter, brainstem, cerebellum]
+  modality:
+    examples: [clinical, CT, MRI, PET, CSF, plasma, histopathology, digital_pathology]
+  inference:
+    examples: [definition, association, diagnostic_accuracy, prognosis, mechanism, treatment_response]
+  context_of_use:
+    examples: [description, differential_diagnosis, rule_in, rule_out, prognosis, cohort_enrichment, longitudinal_monitoring]
+  evidence_relationship:
+    allowed: [supports, challenges, qualifies, context, null, method]
+  extraction_status:
+    allowed: [citation_only, abstract_extracted, full_text_extracted, duplicate, awaiting_review]
+  public_status:
+    allowed: [public_link_only, open_access_verified, local_only, private_unpublished]
+rules:
+  - An imaging lesion must not be assigned a unique pathology without a validated reference relationship.
+  - Diagnostic performance must always include a target population and reference standard.
+  - Technical validation, biological validation, clinical association, and clinical utility are separate claims.
+  - Mixed pathology is represented as coexistence, interaction, mediation, or confounding rather than a residual category.

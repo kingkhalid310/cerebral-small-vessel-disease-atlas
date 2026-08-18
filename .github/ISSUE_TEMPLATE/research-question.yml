@@ -1,0 +1,35 @@
+name: Propose a research question
+description: Suggest a question, missing evidence element, and potentially decisive design.
+title: "Research question: "
+labels: [research-question]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: frame
+    attributes:
+      label: Population, index or exposure, comparator, reference standard, and outcome
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What is currently known?
+    validations:
+      required: true
+  - type: textarea
+    id: missing
+    attributes:
+      label: What critical piece is missing?
+    validations:
+      required: true
+  - type: textarea
+    id: decisive
+    attributes:
+      label: What study could decisively reduce the uncertainty?
+    validations:
+      required: true

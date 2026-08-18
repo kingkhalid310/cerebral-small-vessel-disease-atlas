@@ -1,0 +1,36 @@
+name: Suggest a scholarly source
+description: Propose a paper, consensus statement, dataset, or diagnostic tool for appraisal.
+title: "Source suggestion: "
+labels: [evidence-intake]
+body:
+  - type: markdown
+    attributes:
+      value: "Do not submit patient information, clinical images, credentials, or copyrighted full text."
+  - type: input
+    id: citation
+    attributes:
+      label: Citation or stable identifier
+      description: DOI, PMID, PMCID, or authoritative URL.
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Primary domain
+      options: [CAA, Arteriolosclerosis, Mixed pathology, Imaging, Pathology, Biomarkers, Mechanisms, Criteria and tools, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: relevance
+    attributes:
+      label: Why this source matters
+      description: Name the question, claim, or gap it could change.
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: What did you assess?
+      options: [Full text, Abstract only, Citation only]
+    validations:
+      required: true

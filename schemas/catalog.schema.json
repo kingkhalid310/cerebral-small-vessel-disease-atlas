@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CSVD Evidence Atlas catalog",
+  "type": "object",
+  "required": ["release", "generated", "site_name", "counts", "total_records", "records"],
+  "properties": {
+    "release": {"const": "v0.4"},
+    "generated": {"type": "string", "format": "date"},
+    "site_name": {"type": "string"},
+    "counts": {"type": "object", "additionalProperties": {"type": "integer", "minimum": 0}},
+    "total_records": {"type": "integer", "minimum": 1},
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "title", "summary", "fields", "search_text"]
+      }
+    }
+  }
+}

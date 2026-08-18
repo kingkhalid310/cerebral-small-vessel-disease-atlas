@@ -1,0 +1,32 @@
+name: Report a correction
+description: Flag a factual, citation, interpretation, accessibility, or link problem.
+title: "Correction: "
+labels: [correction]
+body:
+  - type: input
+    id: record
+    attributes:
+      label: Record or page
+      placeholder: "For example, C017, Q013, or docs/methodology.html"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What appears incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Include a stable scholarly identifier when relevant.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacy confirmation
+      options:
+        - label: This report contains no patient data or protected health information.
+          required: true
