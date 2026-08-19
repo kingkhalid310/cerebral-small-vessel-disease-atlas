@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Biomarkers and Tools — a chapter in the cSVD Evidence Atlas."><title>Biomarkers and Tools · cSVD Atlas</title>
+<link rel="stylesheet" href="../assets/styles.css"></head><body>
+<div id="site-header"></div><main id="main" class="reader-layout">
+<aside class="reader-sidebar"><a class="reader-home" href="../learn.html">← Learning home</a><p class="sidebar-label">The core course</p><nav aria-label="Course chapters"><a href="00-how-to-think.html" class="chapter-nav-item"><span>01</span>How to think about cSVD</a><a href="01-field-primer.html" class="chapter-nav-item"><span>02</span>The field primer</a><a href="02-diagnostic-criteria-and-rating-systems.html" class="chapter-nav-item"><span>03</span>Diagnostic criteria and rating systems</a><a href="06-diagnostic-transportability.html" class="chapter-nav-item"><span>04</span>Diagnostic transportability</a><a href="03-biomarkers-and-tools.html" class="chapter-nav-item current"><span>05</span>Biomarkers and tools</a><a href="04-debates-hypotheses-open-questions.html" class="chapter-nav-item"><span>06</span>Debates and open questions</a><a href="11-diagnostic-profiles.html" class="chapter-nav-item"><span>07</span>Diagnostic evidence profiles</a><a href="12-worked-cases.html" class="chapter-nav-item"><span>08</span>Worked reasoning cases</a><a href="09-contradiction-atlas.html" class="chapter-nav-item"><span>09</span>Contradiction and falsification</a><a href="08-evidence-completeness.html" class="chapter-nav-item"><span>10</span>Evidence completeness</a><a href="10-cohort-lineage.html" class="chapter-nav-item"><span>11</span>Cohort lineage</a><a href="05-research-agenda.html" class="chapter-nav-item"><span>12</span>Research agenda</a><a href="07-from-archive-to-research-program.html" class="chapter-nav-item"><span>13</span>From archive to research program</a><a href="13-living-update-workflow.html" class="chapter-nav-item"><span>14</span>Living update workflow</a><a href="14-reading-path.html" class="chapter-nav-item"><span>15</span>Reading path to research fluency</a></nav></aside>
+<article class="reader-content"><header class="chapter-header"><p class="eyebrow">Chapter 05 · Measurement</p><h1>Biomarkers and Tools</h1><div class="chapter-meta"><span>16 min read</span><button class="text-button" data-progress="03-biomarkers-and-tools" type="button">Mark complete</button></div></header>
+<div class="chapter-toc"><strong>In this chapter</strong><a href="#1-a-biomarker-is-defined-by-its-context-of-use">1. A biomarker is defined by its context of use</a><a href="#2-arts-the-arteriolosclerosis-biomarker">2. ARTS: the arteriolosclerosis biomarker</a><a href="#3-markvcid-biomarker-kits">3. MarkVCID biomarker kits</a><a href="#4-caa-biomarkers">4. CAA biomarkers</a><a href="#5-visual-rating-tools">5. Visual rating tools</a><a href="#6-open-and-common-computational-tools">6. Open and common computational tools</a><a href="#7-literature-and-evidence-archive-tools">7. Literature and evidence-archive tools</a><a href="#8-minimum-tool-record-schema">8. Minimum tool-record schema</a><a href="#9-a-practical-validation-ladder">9. A practical validation ladder</a></div>
+<div class="prose"><h2 id="1-a-biomarker-is-defined-by-its-context-of-use">1. A biomarker is defined by its context of use</h2>
+<p>A number is not "validated" in the abstract. It can be validated for one or more specific jobs:</p>
+<ul>
+<li><strong>susceptibility/risk:</strong> identify people more likely to develop disease or an outcome;</li>
+<li><strong>diagnostic:</strong> identify current disease or subtype;</li>
+<li><strong>prognostic:</strong> predict course among people with disease;</li>
+<li><strong>monitoring:</strong> track change over time;</li>
+<li><strong>predictive:</strong> identify differential response or harm from an intervention;</li>
+<li><strong>pharmacodynamic/response:</strong> show that a biological process changed after treatment;</li>
+<li><strong>trial enrichment/stratification:</strong> select or balance participants.</li>
+</ul>
+<p>Technical repeatability, association with cognition, pathology prediction, and treatment responsiveness are different validation layers.</p>
+<h2 id="2-arts-the-arteriolosclerosis-biomarker">2. ARTS: the arteriolosclerosis biomarker</h2>
+<h3 id="what-it-is">What it is</h3>
+<p>ARTS is a fully automated, containerized MRI-based classifier designed to output a score related to the likelihood of brain arteriolosclerosis. It combines:</p>
+<ul>
+<li>3D T1-weighted MRI;</li>
+<li>T2-weighted FLAIR for WMH-related features;</li>
+<li>diffusion tensor imaging, including regional fractional-anisotropy information;</li>
+<li>age at MRI and sex.</li>
+</ul>
+<p>The public package accepts DICOM (preferred by its documentation) or NIfTI and was distributed for Singularity-based execution on Linux/macOS and high-performance computing. Check the current package requirements before using Apptainer as a drop-in replacement.</p>
+<h3 id="development-logic">Development logic</h3>
+<p>ARTS was trained using ex vivo MRI and neuropathology, then translated to in vivo imaging. Its central scientific value is the attempt to learn a pathology-linked arteriolosclerosis signature rather than treating total WMH as if it were specific.</p>
+<h3 id="evidence-to-date">Evidence to date</h3>
+<ul>
+<li>The initial publication reported prediction of arteriolosclerosis, scan-rescan reproducibility, and association with two-year cognitive decline in nondemented older adults.</li>
+<li>MarkVCID instrumental validation reported extremely high inter-rater reliability, high test-retest repeatability, and strong inter-scanner reproducibility in the validation design.</li>
+<li>Clinical/biological validation linked higher baseline ARTS scores with worse baseline performance and faster decline in processing-speed/executive measures in independent cohorts.</li>
+<li>A later diverse cohort of 1,226 older adults linked higher ARTS with incident MCI, dementia, stroke, and several vascular risk factors, with heterogeneity across racial/ethnic groups.</li>
+</ul>
+<h3 id="what-arts-does-not-yet-justify">What ARTS does not yet justify</h3>
+<ul>
+<li>It should not be called a definitive clinical diagnosis of arteriolosclerosis.</li>
+<li>Its output is not a direct image of the vessel wall.</li>
+<li>Validation in very old cohorts does not automatically generalize to midlife, rare genetic cSVD, unusual scanner/protocol distributions, or different disease spectra.</li>
+<li>Age and sex are inputs; fairness and transportability must be evaluated, not assumed.</li>
+<li>Association with outcomes does not prove that changing the ARTS score changes outcomes.</li>
+<li>The composite model can capture correlates of arteriolosclerosis, comorbid pathology, aging, or tissue consequences unless competing pathologies are explicitly tested.</li>
+</ul>
+<h3 id="access-and-reproducibility-record">Access and reproducibility record</h3>
+<ul>
+<li>Tool page: <a href="https://www.nitrc.org/projects/arts/" rel="noopener">NITRC ARTS biomarker</a></li>
+<li>MarkVCID protocol/resources: <a href="https://markvcid.partners.org/markvcid2-protocols-resources" rel="noopener">MarkVCID2 protocols</a></li>
+<li>Initial paper: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC8329541/" rel="noopener">ARTS: a novel in-vivo classifier</a></li>
+<li>Validation report: <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11712721/" rel="noopener">ARTS instrumental and clinical validation</a></li>
+</ul>
+<p>For any ARTS analysis, preserve software version, container hash, input series identifiers, acquisition parameters, DICOM-to-NIfTI conversion provenance, all quality-control failures, demographic inputs, exclusions, and raw output before transformation.</p>
+<h2 id="3-markvcid-biomarker-kits">3. MarkVCID biomarker kits</h2>
+<p>MarkVCID is an NIH-funded multisite program intended to move promising VCID biomarkers toward trial readiness using common protocols and staged instrumental, biological, and clinical validation.</p>
+<p>Current major MRI/fluid kits include:</p>
+<div class="table-wrap"><table><thead><tr><th>Kit</th><th>Input</th><th>Output concept</th><th>Current intended use</th><th>Main cautions</th></tr></thead><tbody>
+<tr><td>ARTS</td><td>T1, FLAIR, DTI, age, sex</td><td>Arteriolosclerosis likelihood score</td><td>Susceptibility/risk and trial stratification</td><td>Transportability, age range, pathology overlap</td></tr>
+<tr><td>PSMD</td><td>Preprocessed diffusion MRI</td><td>95th minus 5th percentile width of skeletonized mean diffusivity</td><td>Diffuse white-matter injury/risk</td><td>Sensitive to diffusion QC, processing, CSF contamination; not etiologic</td></tr>
+<tr><td>Free water</td><td>Diffusion MRI</td><td>Extracellular free-water fraction</td><td>Tissue injury/risk</td><td>Model and acquisition dependence; inflammation/atrophy can influence</td></tr>
+<tr><td>Cerebrovascular reactivity</td><td>Controlled CO2/BOLD MRI</td><td>Vascular response to stimulus</td><td>Vascular dysfunction/target engagement candidate</td><td>Gas delivery, physiology, motion, site harmonization</td></tr>
+<tr><td>WMH volume</td><td>T1 + FLAIR</td><td>Automated lesion volume</td><td>Vascular burden/enrichment</td><td>Algorithm/scanner/domain shift; low specificity</td></tr>
+<tr><td>Plasma NfL</td><td>Plasma assay</td><td>Axonal injury marker</td><td>Risk stratification</td><td>General injury marker, not cSVD-specific</td></tr>
+<tr><td>OCTA vessel skeleton density</td><td>Retinal OCT angiography</td><td>Retinal microvascular density</td><td>Candidate accessible microvascular marker</td><td>Device/segmentation dependence; brain specificity uncertain</td></tr>
+</tbody></table></div>
+<p>Resources: <a href="https://markvcid.partners.org/" rel="noopener">MarkVCID consortium</a>, <a href="https://markvcid.partners.org/markvcid1-results" rel="noopener">MarkVCID1 results</a>, and <a href="https://markvcid.partners.org/markvcid2-protocols-resources" rel="noopener">MarkVCID2 protocols</a>.</p>
+<h2 id="4-caa-biomarkers">4. CAA biomarkers</h2>
+<h3 id="hemorrhagic-mri-markers">Hemorrhagic MRI markers</h3>
+<p>Strictly lobar CMBs, cSS/cSAH, and lobar ICH are the most established clinical imaging signals. cSS extent is also prognostic for recurrent lobar ICH in CAA cohorts. Sequence sensitivity is a major confounder: SWI detects more lesions than many GRE protocols, and field strength/echo time affect counts.</p>
+<h3 id="non-hemorrhagic-mri-markers">Non-hemorrhagic MRI markers</h3>
+<ul>
+<li>severe centrum semiovale PVS;</li>
+<li>posterior or multispot WMH patterns;</li>
+<li>cortical microinfarcts;</li>
+<li>diffusion damage and PSMD;</li>
+<li>reduced structural-network efficiency;</li>
+<li>altered cerebrovascular reactivity;</li>
+<li>cortical thinning and atrophy;</li>
+<li>BBB permeability and vascular-function measures.</li>
+</ul>
+<p>These markers may occur earlier or correlate more closely with cognition than microbleed count. Most lack the etiologic specificity to stand alone.</p>
+<h3 id="amyloid-pet">Amyloid PET</h3>
+<p>Amyloid PET can be sensitive to cerebral amyloid but cannot readily separate vascular from parenchymal amyloid. A negative scan may be useful in selected diagnostic contexts; a positive scan is less specific because Alzheimer-type plaques are common. Tracer, reference region, partial-volume correction, disease stage, and coexisting AD must be modeled.</p>
+<h3 id="csf">CSF</h3>
+<p>Across studies, CAA is often associated with lower CSF Aβ40 and Aβ42, while tau patterns help distinguish or identify coexisting AD. Meta-analyses and newer cohorts support signal, but assay platforms, diagnostic reference standards, and overlap limit stand-alone use. CSF biomarkers are not part of Boston v2.0.</p>
+<h3 id="blood">Blood</h3>
+<p>Plasma proteomic, vascular-injury, inflammatory, Aβ, and APOE-related signatures are active research areas. Recent exploratory studies report candidate protein panels associated with lobar CMBs or neuropathologic CAA. These require independent, prospective, spectrum-appropriate replication and comparison against AD, arteriolosclerosis, renal function, age, and systemic vascular disease.</p>
+<h3 id="genetic-information">Genetic information</h3>
+<ul>
+<li>APOE ε4 is associated with CAA presence/amyloid deposition and capillary CAA.</li>
+<li>APOE ε2 is associated with severe vasculopathic/hemorrhagic manifestations in several cohorts.</li>
+<li>APP mutations cause hereditary CAA syndromes such as Dutch-type CAA; other genes/proteins cause rarer amyloid angiopathies.</li>
+</ul>
+<p>Genetic association is not deterministic diagnosis in sporadic disease. Ancestry, allele frequency, selection, and treatment context matter.</p>
+<h2 id="5-visual-rating-tools">5. Visual rating tools</h2>
+<div class="table-wrap"><table><thead><tr><th>Tool</th><th>Measures</th><th>Recommended archive item</th></tr></thead><tbody>
+<tr><td>MARS</td><td>CMB certainty, count, and anatomy</td><td>Rating form, training cases, rater ID, sequence parameters</td></tr>
+<tr><td>BOMBS</td><td>CMB presence/distribution with mimic guidance</td><td>Scale version, adjudication log</td></tr>
+<tr><td>CHARTS</td><td>Anatomic features of cerebral hemorrhage on CT</td><td>Completed form and reader reliability</td></tr>
+<tr><td>Fazekas</td><td>Periventricular and deep WMH severity</td><td>Both component scores, not only total</td></tr>
+<tr><td>Scheltens</td><td>Regional WMH burden</td><td>Region-level values and total</td></tr>
+<tr><td>Potter/Wardlaw PVS scales</td><td>PVS burden by region</td><td>Basal ganglia and centrum semiovale separately</td></tr>
+<tr><td>cSS focal/disseminated and multifocality scales</td><td>Extent/distribution of superficial siderosis</td><td>Sulci/foci map, not only binary presence</td></tr>
+</tbody></table></div>
+<p>Rating forms and atlases should be versioned. Training examples should include mimics and uncertainty, not only textbook-positive cases.</p>
+<h2 id="6-open-and-common-computational-tools">6. Open and common computational tools</h2>
+<h3 id="wmh-segmentation">WMH segmentation</h3>
+<ul>
+<li><strong>LST-LGA/LPA:</strong> SPM-based lesion growth/prediction algorithms; widely used, originally developed in multiple-sclerosis contexts and often adapted to aging WMH.</li>
+<li><strong>BIANCA:</strong> FSL supervised classifier for white-matter hyperintensities; requires representative training labels and careful thresholding.</li>
+<li><strong>SAMSEG:</strong> sequence-adaptive Bayesian segmentation in FreeSurfer; supports lesion segmentation in multimodal data.</li>
+<li><strong>WMH Segmentation Challenge containers:</strong> standardized benchmark methods; benchmark rank does not guarantee transportability to a new cohort.</li>
+<li><strong>nnU-Net/custom U-Net pipelines:</strong> powerful when trained and externally validated; susceptible to scanner and population domain shift.</li>
+</ul>
+<p>For all automated WMH tools, perform blinded manual QC, record failure categories, assess small-lesion false positives, and compare performance across scanner, site, race/ethnicity, age, lesion burden, and co-pathology.</p>
+<h3 id="diffusion-and-microstructure">Diffusion and microstructure</h3>
+<ul>
+<li><strong>PSMD toolbox:</strong> <a href="https://github.com/miac-research/psmd" rel="noopener">miac-research/psmd</a>, using FSL/TBSS-based skeletonization and histogram analysis.</li>
+<li><strong>FSL diffusion tools:</strong> TOPUP, EDDY, DTIFIT, and TBSS; acquisition-specific QC is essential.</li>
+<li><strong>Free-water models:</strong> implementation and fitting choices vary; keep code/version and parameter maps.</li>
+</ul>
+<h3 id="microbleed-detection">Microbleed detection</h3>
+<p>Automated CMB detectors are improving but face severe class imbalance and mimics from vessels, calcification, and susceptibility artifact. Evaluate lesion-level sensitivity and false positives per scan, not only voxel Dice or patient-level AUC. External validation on different SWI/GRE protocols is essential.</p>
+<h3 id="structural-network-analysis">Structural/network analysis</h3>
+<ul>
+<li><strong>FreeSurfer:</strong> cortical thickness, volume, and surface reconstruction.</li>
+<li><strong>FSL/ANTs:</strong> registration, segmentation, and image processing.</li>
+<li><strong>MRtrix3:</strong> tractography and structural connectomics.</li>
+<li><strong>QSIPrep/fMRIPrep-like reproducible pipelines:</strong> useful for standardized preprocessing, but cSVD lesions can break assumptions and require lesion-aware QC.</li>
+</ul>
+<h3 id="digital-pathology">Digital pathology</h3>
+<p>The Perosa/Scherlek workflow trained separate deep-learning models for parenchymal Aβ plaques, vascular Aβ, iron/calcium, astrocytes, microglia, and fibrin extravasation. The key methodological lesson is to retain marker-specific outputs and expert QC rather than collapsing all staining into one pathology score.</p>
+<p>Useful platforms include QuPath and slide-specific deep-learning frameworks. Cross-laboratory stain normalization, scanner differences, annotation policy, tissue folds, vessel-size definitions, and spatial registration to MRI are first-order problems.</p>
+<h2 id="7-literature-and-evidence-archive-tools">7. Literature and evidence-archive tools</h2>
+<div class="table-wrap"><table><thead><tr><th>Need</th><th>Tool class</th><th>Examples</th><th>Quality control</th></tr></thead><tbody>
+<tr><td>Citation library</td><td>Reference manager</td><td>Zotero, EndNote</td><td>Save DOI/PMID, tags, notes, lawful link, duplicate merge history</td></tr>
+<tr><td>Biomedical search</td><td>Curated index</td><td>PubMed/MEDLINE, Embase</td><td>Store exact query, date, filters, and result count</td></tr>
+<tr><td>Forward/backward citation search</td><td>Citation graph</td><td>OpenAlex, Web of Science, Scopus, Semantic Scholar</td><td>Verify metadata against DOI/publisher</td></tr>
+<tr><td>Screening</td><td>Review platform</td><td>Rayyan, Covidence, ASReview</td><td>Export decisions and exclusion reasons</td></tr>
+<tr><td>Living alerts</td><td>Automated search</td><td>PubMed/MyNCBI, Crossref/OpenAlex scripts</td><td>Deduplicate and manually triage</td></tr>
+<tr><td>Reproducible extraction</td><td>Structured records</td><td>CSV/JSON + templates in this repository</td><td>Two-person review for high-stakes claims</td></tr>
+</tbody></table></div>
+<p>Discovery tools such as Connected Papers, ResearchRabbit, and Litmaps are useful for finding neighborhoods of papers but should not define completeness. Search strategy and eligibility rules should be documented independently.</p>
+<h2 id="8-minimum-tool-record-schema">8. Minimum tool-record schema</h2>
+<p>Every tool record should contain:</p>
+<ul>
+<li>name, version, owner, and stable URL;</li>
+<li>license and redistribution terms;</li>
+<li>intended context of use;</li>
+<li>required inputs and accepted formats;</li>
+<li>preprocessing and quality-control requirements;</li>
+<li>output definition and scale direction;</li>
+<li>training/development population;</li>
+<li>technical, biological, clinical, and external validation evidence;</li>
+<li>known failure modes and excluded populations;</li>
+<li>compute/runtime/container requirements;</li>
+<li>last verified date and maintainer status;</li>
+<li>primary citation and independent evaluations.</li>
+</ul>
+<p>Use <code>templates/TOOL_RECORD_TEMPLATE.md</code> to add new entries.</p>
+<h2 id="9-a-practical-validation-ladder">9. A practical validation ladder</h2>
+<ol>
+<li><strong>Analytical validity:</strong> does the measurement accurately quantify its intended signal on controlled data?</li>
+<li><strong>Repeatability:</strong> does it agree across raters and repeat scans?</li>
+<li><strong>Reproducibility:</strong> does it agree across scanners, sites, and implementations?</li>
+<li><strong>Biological validity:</strong> does it associate with tissue or a credible mechanistic reference?</li>
+<li><strong>Clinical validity:</strong> does it identify or predict a meaningful clinical state/outcome?</li>
+<li><strong>Incremental validity:</strong> does it add information beyond age, risk factors, and standard imaging?</li>
+<li><strong>Transportability and fairness:</strong> does it work in new sites, protocols, ancestries, ages, and comorbidity patterns?</li>
+<li><strong>Responsiveness:</strong> does it change over time or after an intervention in an interpretable way?</li>
+<li><strong>Clinical utility:</strong> does using it improve decisions or outcomes?</li>
+</ol>
+<p>Most cSVD biomarkers have not completed the full ladder. That is not failure; it is the research map.</p></div>
+<nav class="chapter-pager" aria-label="Chapter navigation"><a href="06-diagnostic-transportability.html"><small>Previous</small><strong>Diagnostic transportability</strong></a><a class="next" href="04-debates-hypotheses-open-questions.html"><small>Next</small><strong>Debates and open questions</strong></a></nav>
+</article></main><div id="site-footer"></div><script src="../assets/app.js"></script><script>Atlas.shell('learn','../'); Atlas.progress();</script></body></html>

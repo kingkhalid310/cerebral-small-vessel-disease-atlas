@@ -1,0 +1,37 @@
+{
+  "release": "v0.5",
+  "date": "2026-08-18",
+  "sources": 61,
+  "screening_records": 61,
+  "structured_studies": 21,
+  "claims": 24,
+  "claim_evidence_edges": 67,
+  "tools": 19,
+  "research_questions": 40,
+  "cohorts": 10,
+  "diagnostic_profiles": 7,
+  "hypotheses": 12,
+  "figures": 14,
+  "confidence_counts": {
+    "moderate": 17,
+    "low": 5,
+    "high": 2
+  },
+  "relationship_counts": {
+    "supports": 40,
+    "qualifies": 10,
+    "context": 13,
+    "challenges": 2,
+    "method": 2
+  },
+  "extraction_counts": {
+    "full_text_extracted": 8,
+    "abstract_plus_full_text_web_extracted": 1,
+    "abstract_extracted": 4,
+    "full_text_web_extracted": 5,
+    "citation_only": 2,
+    "abstract_plus_web_extracted": 1
+  },
+  "docx": "/Users/khalidsaifullah/Desktop/Research/MassachusettsGeneralHospital/DiagnosticCriteria4Arteriolosclerosis/KnowledgeBase/v0.4/cerebral-small-vessel-disease-atlas/downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx",
+  "caveat": "Curated scoping evidence map; not a completed systematic review; appraisals are provisional single-reviewer judgments."
+}

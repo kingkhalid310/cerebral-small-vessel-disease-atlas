@@ -106,9 +106,10 @@ def main() -> int:
 
     required_site = ["index.html", "explore.html", "record.html", "learn.html", "pathways.html", "workbench.html", "methodology.html", "about.html", "assets/styles.css", "assets/app.js"]
     checks["site_complete"] = all((ROOT / "docs" / item).exists() for item in required_site)
-    checks["web_chapters_complete"] = len(list((ROOT / "docs" / "chapters").glob("*.html"))) == 11
+    checks["web_chapters_complete"] = len(list((ROOT / "docs" / "chapters").glob("*.html"))) == 15
     checks["figures_present"] = len(list((ROOT / "docs" / "assets" / "figures").glob("*.png"))) == 14
-    checks["reading_edition_present"] = any((ROOT / "downloads").glob("*.docx"))
+    reading_edition = ROOT / "downloads" / "Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx"
+    checks["reading_edition_present"] = reading_edition.exists() and reading_edition.stat().st_size > 0
 
     broken_links: list[str] = []
     for html_path in (ROOT / "docs").rglob("*.html"):

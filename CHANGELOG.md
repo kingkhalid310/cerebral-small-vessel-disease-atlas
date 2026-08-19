@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.5.1 — Synchronized edition — 2026-08-18
+
+### Added
+
+- A one-command build that generates the website catalog, 15-chapter course, figures, and Word reading edition from maintained repository sources.
+- A cryptographic synchronization manifest covering canonical inputs and published outputs.
+- Four previously document-only chapters on diagnostic criteria, biomarkers, active debates, and the path to research fluency.
+- A formal source-of-truth contract and a concrete roadmap for v0.6.
+
+### Changed
+
+- Expanded the course from 11 to 15 chapters and aligned the website, repository curriculum, and Word guide.
+- Replaced release-specific language inside evergreen chapter content.
+
+### Boundary
+
+This patch synchronizes and deepens the existing curated corpus. It does not represent a new systematic search, clinical validation, or automated literature-surveillance system.
+
 ## v0.5 — Learning edition — 2026-08-18
 
 ### Added

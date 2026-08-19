@@ -1,6 +1,6 @@
 # Evidence Completeness Map
 
-Version 0.3 is organized around answerable questions. A topic is not considered complete merely because it has a review paragraph.
+The atlas is organized around answerable questions. A topic is not considered complete merely because it has a review paragraph.
 
 ## Status vocabulary
 

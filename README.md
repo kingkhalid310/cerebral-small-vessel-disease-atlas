@@ -1,13 +1,13 @@
 # Cerebral Small Vessel Disease Evidence Atlas
 
-[![Release](https://img.shields.io/badge/release-v0.5-173f35)](CHANGELOG.md)
+[![Release](https://img.shields.io/badge/release-v0.5.1-173f35)](CHANGELOG.md)
 [![Evidence records](https://img.shields.io/badge/evidence_records-61-426a5a)](data/source_registry.csv)
 [![Research questions](https://img.shields.io/badge/research_questions-40-b07d35)](data/research_questions.csv)
 [![Clinical use](https://img.shields.io/badge/clinical_use-educational_only-8c3d32)](DISCLAIMER.md)
 
 An evidence-traceable, question-driven knowledge base for cerebral small vessel disease, with focused coverage of cerebral amyloid angiopathy (CAA), brain arteriolosclerosis, mixed pathology, diagnostic criteria, imaging markers, biomarkers, mechanisms, and unresolved research problems.
 
-**Release:** v0.5
+**Release:** v0.5.1 synchronized edition
 **Status:** curated scoping knowledge base; not a systematic review or clinical decision-support system
 **Website:** [csvd.medics-global.com](https://csvd.medics-global.com/)
 
@@ -27,14 +27,14 @@ It is designed to answer five questions:
 
 | If you want to... | Open... |
 |---|---|
-| Learn the field in sequence | [Web-native 11-chapter course](https://csvd.medics-global.com/learn.html) or [`content/guide/`](content/guide/) |
+| Learn the field in sequence | [Web-native 15-chapter course](https://csvd.medics-global.com/learn.html), [Word reading edition](downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx), or [`content/guide/`](content/guide/) |
 | See the central unresolved problems | [`data/research_questions.csv`](data/research_questions.csv) |
 | Inspect claim-level evidence | [`data/claims.csv`](data/claims.csv) and [`data/claim_evidence.csv`](data/claim_evidence.csv) |
 | Compare diagnostic approaches | [`data/diagnostic_profiles.csv`](data/diagnostic_profiles.csv) |
 | Test a hypothesis against falsifiers | [`data/hypotheses.csv`](data/hypotheses.csv) |
 | Check cohort reuse before calling evidence independent | [`data/cohorts.csv`](data/cohorts.csv) and [`data/study_cohorts.csv`](data/study_cohorts.csv) |
 | Explore the website locally | Run `python3 scripts/serve.py`, then open the printed address |
-| Validate an edited release | Run `python3 scripts/validate.py` |
+| Synchronize and validate all three views | Run `python3 scripts/sync_release.py` |
 
 ## Repository map
 
@@ -74,14 +74,19 @@ source → study → evidence edge → claim → research question
 
 An imaging pattern may generate a candidate phenotype without constituting validated diagnostic criteria. Association, repeatability, biological validity, diagnostic accuracy, incremental value, transportability, clinical utility, and treatment responsiveness are tracked as different evidentiary achievements.
 
-## Editing workflow
+## One-source publishing workflow
 
-1. Edit the CSV registries or Markdown records.
-2. Run `python3 scripts/build_site_data.py` to regenerate the searchable catalog.
-3. Run `python3 scripts/build_chapters.py` to regenerate the web-native course.
-4. Run `python3 scripts/validate.py`.
-5. Preview with `python3 scripts/serve.py`.
-6. Commit only after reading the generated validation summary.
+The repository is the canonical editorial source. The website and Word guide are generated reading views; do not edit those outputs by hand.
+
+1. Edit `content/guide/`, `data/`, or `governance/`.
+2. Update `release/release.json` when the public version changes.
+3. Run `python3 scripts/sync_release.py` to rebuild the catalog, course, figures, and Word guide; validate them; and write a hash manifest.
+4. Run `python3 scripts/sync_release.py --check` before publishing to detect drift.
+5. Preview with `python3 scripts/serve.py`, review the changes, then commit and deploy.
+
+See [SYNCING.md](SYNCING.md) for ownership rules, review gates, and the release checklist.
+
+The Word builder requires Pillow and python-docx. Install [`requirements-docs.txt`](requirements-docs.txt) in a local virtual environment when those packages are not already available.
 
 This workflow does **not** automate literature surveillance. Source discovery, screening, appraisal, and interpretation remain deliberate human editorial tasks.
 
@@ -100,4 +105,4 @@ Citation metadata are provided in [`CITATION.cff`](CITATION.cff). No reuse licen
 
 ## Version history
 
-v0.5 turns the repository edition into a learning product: web-native chapters, guided pathways, a diagnostic-methods workbench, and human-readable evidence pages. v0.4 remains available through the repository history and release tag.
+v0.5.1 establishes a synchronized publication system across the repository, website, and Word reading edition, and expands the course to 15 chapters. See [ROADMAP_V0.6.md](ROADMAP_V0.6.md) for the proposed learning-graph edition.

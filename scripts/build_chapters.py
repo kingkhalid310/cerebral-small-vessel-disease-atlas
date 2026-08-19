@@ -14,15 +14,27 @@ OUTPUT = ROOT / "docs" / "chapters"
 CHAPTERS = [
     ("00_HOW_TO_THINK.md", "01", "How to think about cSVD", "Foundations", "8 min"),
     ("01_FIELD_PRIMER_V03.md", "02", "The field primer", "Foundations", "24 min"),
-    ("06_DIAGNOSTIC_TRANSPORTABILITY.md", "03", "Diagnostic transportability", "Diagnosis", "7 min"),
-    ("11_DIAGNOSTIC_PROFILES.md", "04", "Diagnostic evidence profiles", "Diagnosis", "6 min"),
-    ("12_WORKED_CASES.md", "05", "Worked reasoning cases", "Reasoning", "5 min"),
-    ("09_CONTRADICTION_ATLAS.md", "06", "Contradiction and falsification", "Evidence", "8 min"),
-    ("08_EVIDENCE_COMPLETENESS.md", "07", "Evidence completeness", "Evidence", "6 min"),
-    ("10_COHORT_LINEAGE.md", "08", "Cohort lineage", "Evidence", "4 min"),
-    ("05_RESEARCH_AGENDA_V03.md", "09", "Research agenda", "Research", "10 min"),
-    ("07_FROM_ARCHIVE_TO_RESEARCH_PROGRAM.md", "10", "From archive to research program", "Research", "6 min"),
-    ("13_LIVING_UPDATE_WORKFLOW.md", "11", "Living update workflow", "Stewardship", "3 min"),
+    ("02_DIAGNOSTIC_CRITERIA_AND_RATING_SYSTEMS.md", "03", "Diagnostic criteria and rating systems", "Diagnosis", "20 min"),
+    ("06_DIAGNOSTIC_TRANSPORTABILITY.md", "04", "Diagnostic transportability", "Diagnosis", "7 min"),
+    ("03_BIOMARKERS_AND_TOOLS.md", "05", "Biomarkers and tools", "Measurement", "16 min"),
+    ("04_DEBATES_HYPOTHESES_OPEN_QUESTIONS.md", "06", "Debates and open questions", "Mechanisms", "18 min"),
+    ("11_DIAGNOSTIC_PROFILES.md", "07", "Diagnostic evidence profiles", "Diagnosis", "6 min"),
+    ("12_WORKED_CASES.md", "08", "Worked reasoning cases", "Reasoning", "5 min"),
+    ("09_CONTRADICTION_ATLAS.md", "09", "Contradiction and falsification", "Evidence", "8 min"),
+    ("08_EVIDENCE_COMPLETENESS.md", "10", "Evidence completeness", "Evidence", "6 min"),
+    ("10_COHORT_LINEAGE.md", "11", "Cohort lineage", "Evidence", "4 min"),
+    ("05_RESEARCH_AGENDA_V03.md", "12", "Research agenda", "Research", "10 min"),
+    ("07_FROM_ARCHIVE_TO_RESEARCH_PROGRAM.md", "13", "From archive to research program", "Research", "6 min"),
+    ("13_LIVING_UPDATE_WORKFLOW.md", "14", "Living update workflow", "Stewardship", "3 min"),
+    ("14_READING_PATH.md", "15", "Reading path to research fluency", "Learning", "7 min"),
+]
+
+PARTS = [
+    ("Part I", "Foundations", "See the system", "Learn how small-vessel injury becomes tissue damage and visible imaging without assigning disease ownership too early.", {"Foundations"}),
+    ("Part II", "Diagnosis and measurement", "Use criteria without worshipping them", "Dissect what a terminology standard, diagnostic rule, biomarker, or evidence profile actually establishes.", {"Diagnosis", "Measurement"}),
+    ("Part III", "Mechanisms and reasoning", "Think in competing explanations", "Work through live debates and cases while preserving mixed pathology and uncertainty.", {"Mechanisms", "Reasoning"}),
+    ("Part IV", "Evidence discipline", "Learn to disagree productively", "Expose contradictions, missing validation links, and false replication before drawing conclusions.", {"Evidence"}),
+    ("Part V", "Research and stewardship", "Convert uncertainty into work", "Prioritize gaps, design decisive studies, maintain the archive, and build a durable reading practice.", {"Research", "Stewardship", "Learning"}),
 ]
 
 
@@ -98,6 +110,20 @@ def render_markdown(text: str) -> tuple[str, list[tuple[str, str]]]:
     return "\n".join(out), toc
 
 
+def build_learning_home(nav: list[tuple[str, str, str, str, str]]) -> None:
+    sections = []
+    for part, label, title, description, stages in PARTS:
+        cards = []
+        for item_slug, number, item_title, stage, reading in nav:
+            if stage not in stages:
+                continue
+            cards.append(f'<a class="card course-card" href="chapters/{item_slug}.html"><span class="course-number">{number}</span><div><span class="number">{html.escape(stage.upper())} · {html.escape(reading.upper())}</span><h3>{html.escape(item_title)}</h3><p>Open the complete chapter with in-page navigation, linked sources, and a self-paced reading marker.</p></div></a>')
+        sections.append(f'<section class="section{(" alt" if len(sections) % 2 else "")}"><div class="container"><div class="section-heading"><div><p class="eyebrow">{part} · {html.escape(label)}</p><h2>{html.escape(title)}</h2></div><p>{html.escape(description)}</p></div><div class="grid-3">{"".join(cards)}</div></div></section>')
+    total_minutes = sum(int(re.search(r"\d+", item[4]).group()) for item in nav)
+    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A synchronized 15-chapter course in cerebral small vessel disease."><title>Learn · cSVD Evidence Atlas</title><link rel="stylesheet" href="assets/styles.css"></head><body><div id="site-header"></div><main id="main"><section class="page-hero"><div class="container"><p class="eyebrow">The core course</p><h1>Build a mental model before memorizing criteria.</h1><p>Fifteen chapters move from anatomy and inference to criteria, biomarkers, live debates, diagnostic validation, contradiction, cohort independence, and research design. Approximately {total_minutes} minutes for a first pass; much longer if you follow the evidence.</p><div class="hero-actions"><a class="button" href="chapters/{nav[0][0]}.html">Start chapter 1</a><a class="button secondary" href="https://github.com/kingkhalid310/cerebral-small-vessel-disease-atlas/raw/main/downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx">Download the synchronized reading edition</a></div></div></section>{''.join(sections)}</main><div id="site-footer"></div><script src="assets/app.js"></script><script>Atlas.shell('learn')</script></body></html>'''
+    (ROOT / "docs" / "learn.html").write_text(page, encoding="utf-8")
+
+
 def main() -> None:
     OUTPUT.mkdir(parents=True, exist_ok=True)
     nav = []
@@ -127,7 +153,8 @@ def main() -> None:
 <nav class="chapter-pager" aria-label="Chapter navigation"><a href="{previous_link}"><small>Previous</small><strong>{html.escape(previous_label)}</strong></a><a class="next" href="{next_link}"><small>Next</small><strong>{html.escape(next_label)}</strong></a></nav>
 </article></main><div id="site-footer"></div><script src="../assets/app.js"></script><script>Atlas.shell('learn','../'); Atlas.progress();</script></body></html>'''
         (OUTPUT / f"{slug(filename)}.html").write_text(page, encoding="utf-8")
-    print(f"Built {len(CHAPTERS)} web-native chapters in {OUTPUT.relative_to(ROOT)}.")
+    build_learning_home(nav)
+    print(f"Built {len(CHAPTERS)} web-native chapters and the synchronized course home.")
 
 
 if __name__ == "__main__":
