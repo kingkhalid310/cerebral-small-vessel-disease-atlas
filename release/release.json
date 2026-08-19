@@ -1,12 +1,12 @@
 {
-  "product_version": "0.5.1",
-  "release_version": "0.5.1",
+  "product_version": "0.6",
+  "release_version": "0.6",
   "release_date": "2026-08-18",
-  "chapter_count": 15,
+  "chapter_count": 24,
   "canonical_narrative": "content/guide",
   "canonical_evidence": "data",
   "canonical_methods": "governance",
-  "document_output": "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx",
+  "document_output": "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.6.docx",
   "website_output": "docs",
   "public_domain": "https://csvd.medics-global.com/"
 }

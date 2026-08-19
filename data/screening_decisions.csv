@@ -60,3 +60,9 @@ SC058,R058,include,"In scope for foundations, diagnosis, mechanism, measurement,
 SC059,R059,include,"In scope for foundations, diagnosis, mechanism, measurement, or mixed pathology",high,full_text_extracted,,2026-08-18
 SC060,R060,include,"In scope for foundations, diagnosis, mechanism, measurement, or mixed pathology",high,full_text_extracted,,2026-08-18
 SC061,R061,include,"In scope for foundations, diagnosis, mechanism, measurement, or mixed pathology",high,full_text_extracted,,2026-08-18
+SC062,R062,include,"In scope for clinical manifestations, prevention, and covert cSVD",essential,full_text_web_extracted,,2026-08-18
+SC063,R063,include,"In scope for lacunar stroke and secondary prevention",essential,full_text_web_extracted,,2026-08-18
+SC064,R064,include,"In scope for monogenic and differential diagnosis coverage",essential,full_text_web_extracted,,2026-08-18
+SC065,R065,include,"In scope for vascular cognitive impairment criteria",essential,abstract_extracted,,2026-08-18
+SC066,R066,include,"In scope for vascular cognitive impairment and mixed dementia",essential,abstract_extracted,,2026-08-18
+SC067,R067,include,"In scope for post-stroke cognitive assessment and management",high,full_text_web_extracted,,2026-08-18

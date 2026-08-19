@@ -1,4 +1,10 @@
-# v0.6 roadmap: the Learning Graph edition
+# v0.6 release record and forward roadmap
+
+## Delivered in v0.6
+
+This release delivers the depth-and-coverage foundation: 24 synchronized learning chapters, nine new deep modules, direct source links in prose and Word, a 72-topic coverage map, and explicit gaps and next actions. It substantially addresses the earlier lack of textbook-like depth, MRI and neuropathology orientation, clinical-spectrum context, management boundaries, and inherited/secondary disease coverage.
+
+The full interactive learning-graph vision below is not yet complete. Retrieval testing, image-rich atlases, paper-by-paper critical appraisal at scale, systematic-search methods, and expert/duplicate review remain future work. This distinction is deliberate so the release never implies more completeness than it has earned.
 
 ## Product thesis
 

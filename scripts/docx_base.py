@@ -39,6 +39,17 @@ LIGHT_BLUE = "E8EEF5"
 LIGHT_GRAY = "F4F6F9"
 
 
+def load_source_links():
+    path = ROOT / "data" / "source_registry.csv"
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8-sig", newline="") as handle:
+        return {row["ref_id"]: row.get("doi_or_url", "") for row in csv.DictReader(handle)}
+
+
+SOURCE_LINKS = load_source_links()
+
+
 def set_run_font(run, name="Calibri", size=11, color=BLACK, bold=None, italic=None):
     run.font.name = name
     run._element.get_or_add_rPr().rFonts.set(qn("w:ascii"), name)
@@ -174,6 +185,12 @@ INLINE_RE = re.compile(r"(\*\*.+?\*\*|`.+?`|\[[^\]]+\]\(https?://(?:[^()]|\([^)]
 
 
 def add_inline(paragraph, text, size=11, color=BLACK):
+    text = re.sub(
+        r"\[\[(R\d{3})\]\]",
+        lambda match: f'[{match.group(1)}]({SOURCE_LINKS[match.group(1)]})'
+        if SOURCE_LINKS.get(match.group(1)) else match.group(1),
+        text,
+    )
     pos = 0
     for match in INLINE_RE.finditer(text):
         if match.start() > pos:
@@ -625,7 +642,8 @@ def render_markdown(doc, path, nums):
                 for row in rows:
                     cells = table.add_row().cells
                     for j, value in enumerate(row):
-                        cells[j].text = re.sub(r"\*\*|`", "", value)
+                        paragraph = cells[j].paragraphs[0]
+                        add_inline(paragraph, re.sub(r"\*\*|`", "", value), size=9.5)
                 format_table(table, choose_widths(headers, rows))
                 p = doc.add_paragraph()
                 set_paragraph_spacing(p, after=2, line=1)

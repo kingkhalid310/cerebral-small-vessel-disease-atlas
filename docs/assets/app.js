@@ -2,7 +2,7 @@ const Atlas = (() => {
   const TYPES = {
     question: "Research question", claim: "Claim", study: "Study", tool: "Tool or criteria",
     hypothesis: "Hypothesis", cohort: "Cohort", diagnostic_profile: "Diagnostic profile",
-    case: "Worked case", source: "Source"
+    case: "Worked case", source: "Source", topic: "Coverage topic"
   };
   const FIELD_GROUPS = {
     question: [
@@ -31,6 +31,11 @@ const Atlas = (() => {
       ["Citation", ["authors_or_group","year","source","doi","pmid","pmcid","doi_or_url"]],
       ["Why it is here", ["evidence_type","topic","priority","archive_note"]],
       ["Archive status", ["metadata_status","reviewed_on"]]
+    ],
+    topic: [
+      ["Coverage status", ["depth_status","current_module","priority"]],
+      ["What remains", ["gap","next_action"]],
+      ["Classification and sources", ["domain","kind","core_sources"]]
     ]
   };
   const esc = (value = "") => String(value).replace(/[&<>'"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;","'":"&#39;",'"':"&quot;"}[c]));
@@ -39,14 +44,14 @@ const Atlas = (() => {
   const badge = (value, extra = "") => value ? `<span class="badge ${statusClass(value)} ${extra}">${esc(human(value))}</span>` : "";
 
   function shell(active = "", base = "") {
-    const nav = [["learn.html","Learn","learn"],["pathways.html","Pathways","pathways"],["workbench.html","Criteria & tools","workbench"],["explore.html","Evidence library","explore"],["about.html","About","about"]];
+    const nav = [["learn.html","Learn","learn"],["coverage.html","Coverage","coverage"],["workbench.html","Criteria & tools","workbench"],["explore.html","Evidence library","explore"],["about.html","About","about"]];
     document.querySelector("#site-header").innerHTML = `<a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="nav-wrap"><a class="brand" href="${base}index.html"><span class="brand-mark">cSVD</span><span class="brand-copy"><strong>Evidence Atlas</strong><small>Learn · reason · investigate</small></span></a><button class="nav-toggle" type="button" aria-label="Open navigation">Menu</button><nav class="site-nav" aria-label="Primary">${nav.map(([href,label,key])=>`<a href="${base}${href}" ${key===active?'aria-current="page"':''}>${label}</a>`).join("")}</nav></div></header>`;
     document.querySelector(".nav-toggle")?.addEventListener("click",()=>document.querySelector(".site-nav").classList.toggle("open"));
-    document.querySelector("#site-footer").innerHTML = `<footer class="site-footer"><div class="container footer-grid"><div><strong>cSVD Evidence Atlas <span class="version">v0.5.1</span></strong><p class="fine">A web-native field guide and evidence workspace for CAA, brain arteriolosclerosis, and mixed small-vessel disease.</p></div><div><strong>Use responsibly</strong><p class="fine">Research and education only. No patient data. Findings are not diagnoses.</p></div><div><strong>Project</strong><p class="fine"><a href="https://github.com/kingkhalid310/cerebral-small-vessel-disease-atlas">GitHub repository</a><br><a href="${base}about.html#citation">Citation and methods</a></p></div></div></footer>`;
+    document.querySelector("#site-footer").innerHTML = `<footer class="site-footer"><div class="container footer-grid"><div><strong>cSVD Evidence Atlas <span class="version">v0.6</span></strong><p class="fine">A web-native field guide and evidence workspace for CAA, brain arteriolosclerosis, and the wider small-vessel disease spectrum.</p></div><div><strong>Use responsibly</strong><p class="fine">Research and education only. No patient data. Findings are not diagnoses or treatment recommendations.</p></div><div><strong>Project</strong><p class="fine"><a href="https://github.com/kingkhalid310/cerebral-small-vessel-disease-atlas">GitHub repository</a><br><a href="${base}about.html#citation">Citation and methods</a></p></div></div></footer>`;
   }
   async function catalog(base="") { const response=await fetch(`${base}data/catalog.json`); if(!response.ok) throw new Error("The evidence catalog could not be loaded."); return response.json(); }
   function linkify(value, recordsById) {
-    let output=esc(value); const ids=[...new Set(String(value).match(/\b(?:Q|C|S|T|H|COH|DP|UC|R)\d{3}\b/g)||[])];
+    let output=esc(value); const ids=[...new Set(String(value).match(/\b(?:TOP|Q|C|S|T|H|COH|DP|UC|R)\d{3}\b/g)||[])];
     ids.sort((a,b)=>b.length-a.length).forEach(id=>{if(recordsById.has(id)) output=output.replaceAll(id,`<a href="record.html?id=${encodeURIComponent(id)}">${id}</a>`)});
     output=output.replace(/(https?:\/\/[^\s<]+)/g,'<a href="$1" rel="noopener">Open source ↗</a>'); return output;
   }

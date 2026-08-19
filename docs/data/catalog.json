@@ -1,5 +1,5 @@
 {
-  "release": "v0.5.1",
+  "release": "v0.6",
   "generated": "2026-08-18",
   "site_name": "Cerebral Small Vessel Disease Evidence Atlas",
   "counts": {
@@ -11,9 +11,10 @@
     "cohort": 10,
     "diagnostic_profile": 7,
     "case": 8,
-    "source": 61
+    "source": 67,
+    "topic": 72
   },
-  "total_records": 202,
+  "total_records": 280,
   "records": [
     {
       "id": "UC001",
@@ -13417,6 +13418,504 @@
       "search_text": "r061 source clinical-radiological spectrum of cerebral amyloid angiopathy-related inflammation caa-related inflammation  caa-related inflammation high r061 clinical-radiological spectrum of cerebral amyloid angiopathy-related inflammation panteleienko et al. 2026 annals of neurology retrospective comparative cohort caa-related inflammation high 10.1002/ana.78029 40970476 pmc12946602 https://doi.org/10.1002/ana.78029 partially enriched compared 37 caa-ri and 158 non-inflammatory sporadic caa cases; aria-e features were much more frequent in caa-ri. 2026-08-18"
     },
     {
+      "id": "R062",
+      "type": "source",
+      "title": "ESO Guideline on covert cerebral small vessel disease",
+      "summary": "covert cSVD and prevention",
+      "status": "",
+      "state": "",
+      "domain": "covert cSVD and prevention",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Ref Id",
+          "key": "ref_id",
+          "value": "R062"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "ESO Guideline on covert cerebral small vessel disease"
+        },
+        {
+          "label": "Authors Or Group",
+          "key": "authors_or_group",
+          "value": "Wardlaw et al."
+        },
+        {
+          "label": "Year",
+          "key": "year",
+          "value": "2021"
+        },
+        {
+          "label": "Source",
+          "key": "source",
+          "value": "European Stroke Journal"
+        },
+        {
+          "label": "Evidence Type",
+          "key": "evidence_type",
+          "value": "clinical guideline"
+        },
+        {
+          "label": "Topic",
+          "key": "topic",
+          "value": "covert cSVD and prevention"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Doi",
+          "key": "doi",
+          "value": "10.1177/23969873211027002"
+        },
+        {
+          "label": "Pmid",
+          "key": "pmid",
+          "value": "34414305"
+        },
+        {
+          "label": "Pmcid",
+          "key": "pmcid",
+          "value": "PMC8370062"
+        },
+        {
+          "label": "Doi Or Url",
+          "key": "doi_or_url",
+          "value": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8370062/"
+        },
+        {
+          "label": "Metadata Status",
+          "key": "metadata_status",
+          "value": "full metadata"
+        },
+        {
+          "label": "Archive Note",
+          "key": "archive_note",
+          "value": "Guideline for WMH and lacunes without overt neurological presentation; evidence quality is often low and context-specific."
+        },
+        {
+          "label": "Reviewed On",
+          "key": "reviewed_on",
+          "value": "2026-08-18"
+        }
+      ],
+      "search_text": "r062 source eso guideline on covert cerebral small vessel disease covert csvd and prevention  covert csvd and prevention essential r062 eso guideline on covert cerebral small vessel disease wardlaw et al. 2021 european stroke journal clinical guideline covert csvd and prevention essential 10.1177/23969873211027002 34414305 pmc8370062 https://pmc.ncbi.nlm.nih.gov/articles/pmc8370062/ full metadata guideline for wmh and lacunes without overt neurological presentation; evidence quality is often low and context-specific. 2026-08-18"
+    },
+    {
+      "id": "R063",
+      "type": "source",
+      "title": "European Stroke Organisation guideline on cerebral small vessel disease part 2 lacunar ischaemic stroke",
+      "summary": "lacunar stroke",
+      "status": "",
+      "state": "",
+      "domain": "lacunar stroke",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Ref Id",
+          "key": "ref_id",
+          "value": "R063"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "European Stroke Organisation guideline on cerebral small vessel disease part 2 lacunar ischaemic stroke"
+        },
+        {
+          "label": "Authors Or Group",
+          "key": "authors_or_group",
+          "value": "Wardlaw et al."
+        },
+        {
+          "label": "Year",
+          "key": "year",
+          "value": "2024"
+        },
+        {
+          "label": "Source",
+          "key": "source",
+          "value": "European Stroke Journal"
+        },
+        {
+          "label": "Evidence Type",
+          "key": "evidence_type",
+          "value": "clinical guideline"
+        },
+        {
+          "label": "Topic",
+          "key": "topic",
+          "value": "lacunar stroke"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Doi",
+          "key": "doi",
+          "value": "10.1177/23969873231219416"
+        },
+        {
+          "label": "Pmcid",
+          "key": "pmcid",
+          "value": "PMC10916806"
+        },
+        {
+          "label": "Doi Or Url",
+          "key": "doi_or_url",
+          "value": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10916806/"
+        },
+        {
+          "label": "Metadata Status",
+          "key": "metadata_status",
+          "value": "full metadata"
+        },
+        {
+          "label": "Archive Note",
+          "key": "archive_note",
+          "value": "Guideline covering diagnosis acute treatment progressive lacunar stroke and secondary prevention."
+        },
+        {
+          "label": "Reviewed On",
+          "key": "reviewed_on",
+          "value": "2026-08-18"
+        }
+      ],
+      "search_text": "r063 source european stroke organisation guideline on cerebral small vessel disease part 2 lacunar ischaemic stroke lacunar stroke  lacunar stroke essential r063 european stroke organisation guideline on cerebral small vessel disease part 2 lacunar ischaemic stroke wardlaw et al. 2024 european stroke journal clinical guideline lacunar stroke essential 10.1177/23969873231219416  pmc10916806 https://pmc.ncbi.nlm.nih.gov/articles/pmc10916806/ full metadata guideline covering diagnosis acute treatment progressive lacunar stroke and secondary prevention. 2026-08-18"
+    },
+    {
+      "id": "R064",
+      "type": "source",
+      "title": "Genetic causes of cerebral small vessel diseases: a practical guide for neurologists",
+      "summary": "monogenic cSVD",
+      "status": "",
+      "state": "",
+      "domain": "monogenic cSVD",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Ref Id",
+          "key": "ref_id",
+          "value": "R064"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Genetic causes of cerebral small vessel diseases: a practical guide for neurologists"
+        },
+        {
+          "label": "Authors Or Group",
+          "key": "authors_or_group",
+          "value": "Manini and Pantoni"
+        },
+        {
+          "label": "Year",
+          "key": "year",
+          "value": "2023"
+        },
+        {
+          "label": "Source",
+          "key": "source",
+          "value": "Neurology"
+        },
+        {
+          "label": "Evidence Type",
+          "key": "evidence_type",
+          "value": "review and diagnostic framework"
+        },
+        {
+          "label": "Topic",
+          "key": "topic",
+          "value": "monogenic cSVD"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Doi",
+          "key": "doi",
+          "value": "10.1212/WNL.0000000000201720"
+        },
+        {
+          "label": "Pmcid",
+          "key": "pmcid",
+          "value": "PMC10115494"
+        },
+        {
+          "label": "Doi Or Url",
+          "key": "doi_or_url",
+          "value": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10115494/"
+        },
+        {
+          "label": "Metadata Status",
+          "key": "metadata_status",
+          "value": "full metadata"
+        },
+        {
+          "label": "Archive Note",
+          "key": "archive_note",
+          "value": "Phenotype-first guide to genetic clinical systemic and neuroimaging clues; MRI patterns are informative but rarely diagnostic alone."
+        },
+        {
+          "label": "Reviewed On",
+          "key": "reviewed_on",
+          "value": "2026-08-18"
+        }
+      ],
+      "search_text": "r064 source genetic causes of cerebral small vessel diseases: a practical guide for neurologists monogenic csvd  monogenic csvd essential r064 genetic causes of cerebral small vessel diseases: a practical guide for neurologists manini and pantoni 2023 neurology review and diagnostic framework monogenic csvd essential 10.1212/wnl.0000000000201720  pmc10115494 https://pmc.ncbi.nlm.nih.gov/articles/pmc10115494/ full metadata phenotype-first guide to genetic clinical systemic and neuroimaging clues; mri patterns are informative but rarely diagnostic alone. 2026-08-18"
+    },
+    {
+      "id": "R065",
+      "type": "source",
+      "title": "Revised diagnostic criteria for vascular cognitive impairment and dementia - the VasCog-2-WSO criteria",
+      "summary": "vascular cognitive impairment",
+      "status": "",
+      "state": "",
+      "domain": "vascular cognitive impairment",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Ref Id",
+          "key": "ref_id",
+          "value": "R065"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Revised diagnostic criteria for vascular cognitive impairment and dementia - the VasCog-2-WSO criteria"
+        },
+        {
+          "label": "Authors Or Group",
+          "key": "authors_or_group",
+          "value": "Sachdev et al."
+        },
+        {
+          "label": "Year",
+          "key": "year",
+          "value": "2025"
+        },
+        {
+          "label": "Source",
+          "key": "source",
+          "value": "JAMA Neurology"
+        },
+        {
+          "label": "Evidence Type",
+          "key": "evidence_type",
+          "value": "Delphi consensus criteria"
+        },
+        {
+          "label": "Topic",
+          "key": "topic",
+          "value": "vascular cognitive impairment"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Pmid",
+          "key": "pmid",
+          "value": "40955506"
+        },
+        {
+          "label": "Doi Or Url",
+          "key": "doi_or_url",
+          "value": "https://pubmed.ncbi.nlm.nih.gov/40955506/"
+        },
+        {
+          "label": "Metadata Status",
+          "key": "metadata_status",
+          "value": "full metadata"
+        },
+        {
+          "label": "Archive Note",
+          "key": "archive_note",
+          "value": "Operational research criteria for preclinical mild and major VCID with guidance on imaging and fluid biomarkers."
+        },
+        {
+          "label": "Reviewed On",
+          "key": "reviewed_on",
+          "value": "2026-08-18"
+        }
+      ],
+      "search_text": "r065 source revised diagnostic criteria for vascular cognitive impairment and dementia - the vascog-2-wso criteria vascular cognitive impairment  vascular cognitive impairment essential r065 revised diagnostic criteria for vascular cognitive impairment and dementia - the vascog-2-wso criteria sachdev et al. 2025 jama neurology delphi consensus criteria vascular cognitive impairment essential  40955506  https://pubmed.ncbi.nlm.nih.gov/40955506/ full metadata operational research criteria for preclinical mild and major vcid with guidance on imaging and fluid biomarkers. 2026-08-18"
+    },
+    {
+      "id": "R066",
+      "type": "source",
+      "title": "The vascular contribution to dementia: World Stroke Organisation scientific statement",
+      "summary": "vascular cognitive impairment",
+      "status": "",
+      "state": "",
+      "domain": "vascular cognitive impairment",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Ref Id",
+          "key": "ref_id",
+          "value": "R066"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "The vascular contribution to dementia: World Stroke Organisation scientific statement"
+        },
+        {
+          "label": "Authors Or Group",
+          "key": "authors_or_group",
+          "value": "WSO writing group"
+        },
+        {
+          "label": "Year",
+          "key": "year",
+          "value": "2026"
+        },
+        {
+          "label": "Source",
+          "key": "source",
+          "value": "International Journal of Stroke"
+        },
+        {
+          "label": "Evidence Type",
+          "key": "evidence_type",
+          "value": "scientific statement"
+        },
+        {
+          "label": "Topic",
+          "key": "topic",
+          "value": "vascular cognitive impairment"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Doi",
+          "key": "doi",
+          "value": "10.1177/17474930261470506"
+        },
+        {
+          "label": "Pmid",
+          "key": "pmid",
+          "value": "42454751"
+        },
+        {
+          "label": "Doi Or Url",
+          "key": "doi_or_url",
+          "value": "https://pubmed.ncbi.nlm.nih.gov/42454751/"
+        },
+        {
+          "label": "Metadata Status",
+          "key": "metadata_status",
+          "value": "full metadata"
+        },
+        {
+          "label": "Archive Note",
+          "key": "archive_note",
+          "value": "Integrates epidemiology neuropathology cognition clinical impact management mixed disease monogenic disease and trials."
+        },
+        {
+          "label": "Reviewed On",
+          "key": "reviewed_on",
+          "value": "2026-08-18"
+        }
+      ],
+      "search_text": "r066 source the vascular contribution to dementia: world stroke organisation scientific statement vascular cognitive impairment  vascular cognitive impairment essential r066 the vascular contribution to dementia: world stroke organisation scientific statement wso writing group 2026 international journal of stroke scientific statement vascular cognitive impairment essential 10.1177/17474930261470506 42454751  https://pubmed.ncbi.nlm.nih.gov/42454751/ full metadata integrates epidemiology neuropathology cognition clinical impact management mixed disease monogenic disease and trials. 2026-08-18"
+    },
+    {
+      "id": "R067",
+      "type": "source",
+      "title": "European Stroke Organisation and European Academy of Neurology joint guidelines on post-stroke cognitive impairment",
+      "summary": "post-stroke cognition",
+      "status": "",
+      "state": "",
+      "domain": "post-stroke cognition",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Ref Id",
+          "key": "ref_id",
+          "value": "R067"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "European Stroke Organisation and European Academy of Neurology joint guidelines on post-stroke cognitive impairment"
+        },
+        {
+          "label": "Authors Or Group",
+          "key": "authors_or_group",
+          "value": "Quinn et al."
+        },
+        {
+          "label": "Year",
+          "key": "year",
+          "value": "2021"
+        },
+        {
+          "label": "Source",
+          "key": "source",
+          "value": "European Stroke Journal"
+        },
+        {
+          "label": "Evidence Type",
+          "key": "evidence_type",
+          "value": "clinical guideline"
+        },
+        {
+          "label": "Topic",
+          "key": "topic",
+          "value": "post-stroke cognition"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Doi",
+          "key": "doi",
+          "value": "10.1177/23969873211042192"
+        },
+        {
+          "label": "Pmcid",
+          "key": "pmcid",
+          "value": "PMC8564156"
+        },
+        {
+          "label": "Doi Or Url",
+          "key": "doi_or_url",
+          "value": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8564156/"
+        },
+        {
+          "label": "Metadata Status",
+          "key": "metadata_status",
+          "value": "full metadata"
+        },
+        {
+          "label": "Archive Note",
+          "key": "archive_note",
+          "value": "Guideline on screening diagnosis prevention and management of cognitive impairment after stroke."
+        },
+        {
+          "label": "Reviewed On",
+          "key": "reviewed_on",
+          "value": "2026-08-18"
+        }
+      ],
+      "search_text": "r067 source european stroke organisation and european academy of neurology joint guidelines on post-stroke cognitive impairment post-stroke cognition  post-stroke cognition high r067 european stroke organisation and european academy of neurology joint guidelines on post-stroke cognitive impairment quinn et al. 2021 european stroke journal clinical guideline post-stroke cognition high 10.1177/23969873211042192  pmc8564156 https://pmc.ncbi.nlm.nih.gov/articles/pmc8564156/ full metadata guideline on screening diagnosis prevention and management of cognitive impairment after stroke. 2026-08-18"
+    },
+    {
       "id": "S001",
       "type": "study",
       "title": "Boston v2.0 derivation and validation",
@@ -17345,6 +17844,4542 @@
         }
       ],
       "search_text": "t019 tool aria detection and monitoring framework aria-e edema/effusion and aria-h hemorrhagic abnormalities consensus-based monitoring with therapy-specific evidence; real-world severe-event prediction remains limited safety monitoring framework  t019 aria detection and monitoring framework safety monitoring framework mri surveillance during anti-amyloid therapy aria-e edema/effusion and aria-h hemorrhagic abnormalities baseline and serial flair, diffusion, t2*-gre or swi, clinical context, treatment timing presence, type, severity, evolution, and action-relevant communication alzheimer's association workgroup and neuroradiology guidance consensus-based monitoring with therapy-specific evidence; real-world severe-event prediction remains limited trial and clinical imaging definitions plus outcomes connects standardized detection to safety workflows aria, spontaneous caa-ri, infarction, pres, infection, and other mimics may overlap clinical safety framework; use current drug-specific guidance 2026 workgroup update r040;r055 2026-08-18"
+    },
+    {
+      "id": "TOP001",
+      "type": "topic",
+      "title": "Small-vessel anatomy and vascular territories",
+      "summary": "Regional and venular anatomy remain less developed",
+      "status": "",
+      "state": "",
+      "domain": "Foundations",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP001"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Small-vessel anatomy and vascular territories"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Foundations"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "concept"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003;R037"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Regional and venular anatomy remain less developed"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add an expert-reviewed vascular anatomy figure set"
+        }
+      ],
+      "search_text": "top001 topic small-vessel anatomy and vascular territories regional and venular anatomy remain less developed  foundations essential top001 small-vessel anatomy and vascular territories foundations concept deep 15-vessel-anatomy-and-neurovascular-unit essential r003;r037 regional and venular anatomy remain less developed add an expert-reviewed vascular anatomy figure set"
+    },
+    {
+      "id": "TOP002",
+      "type": "topic",
+      "title": "Neurovascular unit",
+      "summary": "Cell-specific human evidence is uneven",
+      "status": "",
+      "state": "",
+      "domain": "Foundations",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP002"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Neurovascular unit"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Foundations"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "concept"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R037;R038"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Cell-specific human evidence is uneven"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Link cell-level claims to human and experimental evidence"
+        }
+      ],
+      "search_text": "top002 topic neurovascular unit cell-specific human evidence is uneven  foundations essential top002 neurovascular unit foundations concept deep 15-vessel-anatomy-and-neurovascular-unit essential r037;r038 cell-specific human evidence is uneven link cell-level claims to human and experimental evidence"
+    },
+    {
+      "id": "TOP003",
+      "type": "topic",
+      "title": "Cerebral autoregulation",
+      "summary": "Thresholds and regional interpretation vary",
+      "status": "",
+      "state": "",
+      "domain": "Physiology",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP003"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Cerebral autoregulation"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Physiology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "mechanism"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R037;R054"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Thresholds and regional interpretation vary"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add acquisition and analysis protocol comparisons"
+        }
+      ],
+      "search_text": "top003 topic cerebral autoregulation thresholds and regional interpretation vary  physiology high top003 cerebral autoregulation physiology mechanism core 15-vessel-anatomy-and-neurovascular-unit high r037;r054 thresholds and regional interpretation vary add acquisition and analysis protocol comparisons"
+    },
+    {
+      "id": "TOP004",
+      "type": "topic",
+      "title": "Neurovascular coupling",
+      "summary": "Etiologic specificity is limited",
+      "status": "",
+      "state": "",
+      "domain": "Physiology",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP004"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Neurovascular coupling"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Physiology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "mechanism"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R037;R054"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Etiologic specificity is limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Build a modality comparison dossier"
+        }
+      ],
+      "search_text": "top004 topic neurovascular coupling etiologic specificity is limited  physiology high top004 neurovascular coupling physiology mechanism core 15-vessel-anatomy-and-neurovascular-unit high r037;r054 etiologic specificity is limited build a modality comparison dossier"
+    },
+    {
+      "id": "TOP005",
+      "type": "topic",
+      "title": "Blood-brain barrier",
+      "summary": "Causality and temporal order remain uncertain",
+      "status": "",
+      "state": "",
+      "domain": "Mechanisms",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP005"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Blood-brain barrier"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Mechanisms"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "mechanism"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R013;R037;R038"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Causality and temporal order remain uncertain"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Expand longitudinal and pathology-linked evidence"
+        }
+      ],
+      "search_text": "top005 topic blood-brain barrier causality and temporal order remain uncertain  mechanisms essential top005 blood-brain barrier mechanisms mechanism deep 15-vessel-anatomy-and-neurovascular-unit essential r013;r037;r038 causality and temporal order remain uncertain expand longitudinal and pathology-linked evidence"
+    },
+    {
+      "id": "TOP006",
+      "type": "topic",
+      "title": "Perivascular clearance",
+      "summary": "Competing drainage models and reverse causation",
+      "status": "",
+      "state": "",
+      "domain": "Mechanisms",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP006"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Perivascular clearance"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Mechanisms"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "mechanism"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "16-cerebral-amyloid-angiopathy-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R011;R012"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Competing drainage models and reverse causation"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create model-by-prediction evidence table"
+        }
+      ],
+      "search_text": "top006 topic perivascular clearance competing drainage models and reverse causation  mechanisms essential top006 perivascular clearance mechanisms mechanism deep 16-cerebral-amyloid-angiopathy-deep-dive essential r011;r012 competing drainage models and reverse causation create model-by-prediction evidence table"
+    },
+    {
+      "id": "TOP007",
+      "type": "topic",
+      "title": "Pulsatility and arterial stiffness",
+      "summary": "Direct vessel-level links are sparse",
+      "status": "",
+      "state": "",
+      "domain": "Physiology",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP007"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Pulsatility and arterial stiffness"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Physiology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "mechanism"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R037;R038"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Direct vessel-level links are sparse"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add multimodal longitudinal studies"
+        }
+      ],
+      "search_text": "top007 topic pulsatility and arterial stiffness direct vessel-level links are sparse  physiology high top007 pulsatility and arterial stiffness physiology mechanism core 15-vessel-anatomy-and-neurovascular-unit high r037;r038 direct vessel-level links are sparse add multimodal longitudinal studies"
+    },
+    {
+      "id": "TOP008",
+      "type": "topic",
+      "title": "Brain arteriolosclerosis definition",
+      "summary": "Construct boundaries and nomenclature remain inconsistent",
+      "status": "",
+      "state": "",
+      "domain": "Arteriolosclerosis",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP008"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Brain arteriolosclerosis definition"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Arteriolosclerosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "17-brain-arteriolosclerosis-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Construct boundaries and nomenclature remain inconsistent"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create lesion-level visual glossary"
+        }
+      ],
+      "search_text": "top008 topic brain arteriolosclerosis definition construct boundaries and nomenclature remain inconsistent  arteriolosclerosis essential top008 brain arteriolosclerosis definition arteriolosclerosis pathology deep 17-brain-arteriolosclerosis-deep-dive essential r003 construct boundaries and nomenclature remain inconsistent create lesion-level visual glossary"
+    },
+    {
+      "id": "TOP009",
+      "type": "topic",
+      "title": "Lipohyalinosis and fibrinoid injury",
+      "summary": "Historical terms are applied inconsistently",
+      "status": "",
+      "state": "",
+      "domain": "Arteriolosclerosis",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP009"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Lipohyalinosis and fibrinoid injury"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Arteriolosclerosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "17-brain-arteriolosclerosis-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Historical terms are applied inconsistently"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add pathology terminology concordance"
+        }
+      ],
+      "search_text": "top009 topic lipohyalinosis and fibrinoid injury historical terms are applied inconsistently  arteriolosclerosis high top009 lipohyalinosis and fibrinoid injury arteriolosclerosis pathology core 17-brain-arteriolosclerosis-deep-dive high r003 historical terms are applied inconsistently add pathology terminology concordance"
+    },
+    {
+      "id": "TOP010",
+      "type": "topic",
+      "title": "Smooth-muscle loss and vessel-wall fibrosis",
+      "summary": "Mechanism-to-imaging bridge is incomplete",
+      "status": "",
+      "state": "",
+      "domain": "Arteriolosclerosis",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP010"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Smooth-muscle loss and vessel-wall fibrosis"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Arteriolosclerosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "17-brain-arteriolosclerosis-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003;R038"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Mechanism-to-imaging bridge is incomplete"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Link regional pathology to in-vivo measures"
+        }
+      ],
+      "search_text": "top010 topic smooth-muscle loss and vessel-wall fibrosis mechanism-to-imaging bridge is incomplete  arteriolosclerosis essential top010 smooth-muscle loss and vessel-wall fibrosis arteriolosclerosis pathology deep 17-brain-arteriolosclerosis-deep-dive essential r003;r038 mechanism-to-imaging bridge is incomplete link regional pathology to in-vivo measures"
+    },
+    {
+      "id": "TOP011",
+      "type": "topic",
+      "title": "Arteriolosclerosis regional heterogeneity",
+      "summary": "Person-level aggregation is unsettled",
+      "status": "",
+      "state": "",
+      "domain": "Arteriolosclerosis",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP011"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Arteriolosclerosis regional heterogeneity"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Arteriolosclerosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "17-brain-arteriolosclerosis-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003;R033"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Person-level aggregation is unsettled"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Build regional scoring comparison"
+        }
+      ],
+      "search_text": "top011 topic arteriolosclerosis regional heterogeneity person-level aggregation is unsettled  arteriolosclerosis essential top011 arteriolosclerosis regional heterogeneity arteriolosclerosis pathology deep 17-brain-arteriolosclerosis-deep-dive essential r003;r033 person-level aggregation is unsettled build regional scoring comparison"
+    },
+    {
+      "id": "TOP012",
+      "type": "topic",
+      "title": "CAA pathology and severity",
+      "summary": "Sampling and capillary involvement complicate classification",
+      "status": "",
+      "state": "",
+      "domain": "CAA",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP012"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "CAA pathology and severity"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "CAA"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "16-cerebral-amyloid-angiopathy-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R004;R005;R026"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Sampling and capillary involvement complicate classification"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add region-by-region pathology atlas"
+        }
+      ],
+      "search_text": "top012 topic caa pathology and severity sampling and capillary involvement complicate classification  caa essential top012 caa pathology and severity caa pathology deep 16-cerebral-amyloid-angiopathy-deep-dive essential r004;r005;r026 sampling and capillary involvement complicate classification add region-by-region pathology atlas"
+    },
+    {
+      "id": "TOP013",
+      "type": "topic",
+      "title": "CAA vessel rupture and remodeling",
+      "summary": "Local amyloid burden does not fully explain rupture",
+      "status": "",
+      "state": "",
+      "domain": "CAA",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP013"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "CAA vessel rupture and remodeling"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "CAA"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "mechanism"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "16-cerebral-amyloid-angiopathy-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R004;R010"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Local amyloid burden does not fully explain rupture"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create rupture-mechanism hypothesis dossier"
+        }
+      ],
+      "search_text": "top013 topic caa vessel rupture and remodeling local amyloid burden does not fully explain rupture  caa essential top013 caa vessel rupture and remodeling caa mechanism deep 16-cerebral-amyloid-angiopathy-deep-dive essential r004;r010 local amyloid burden does not fully explain rupture create rupture-mechanism hypothesis dossier"
+    },
+    {
+      "id": "TOP014",
+      "type": "topic",
+      "title": "CAA and Alzheimer disease",
+      "summary": "Shared peptide does not imply identical disease process",
+      "status": "",
+      "state": "",
+      "domain": "CAA",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP014"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "CAA and Alzheimer disease"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "CAA"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "mixed pathology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "16-cerebral-amyloid-angiopathy-deep-dive"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R004;R005;R050"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Shared peptide does not imply identical disease process"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Expand compartment-specific evidence"
+        }
+      ],
+      "search_text": "top014 topic caa and alzheimer disease shared peptide does not imply identical disease process  caa essential top014 caa and alzheimer disease caa mixed pathology deep 16-cerebral-amyloid-angiopathy-deep-dive essential r004;r005;r050 shared peptide does not imply identical disease process expand compartment-specific evidence"
+    },
+    {
+      "id": "TOP015",
+      "type": "topic",
+      "title": "CAA-related inflammation",
+      "summary": "Real-world mimic performance is incomplete",
+      "status": "",
+      "state": "",
+      "domain": "CAA",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP015"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "CAA-related inflammation"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "CAA"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "clinical syndrome"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "02-diagnostic-criteria-and-rating-systems"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R008;R057;R061"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Real-world mimic performance is incomplete"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add differential and treatment-evidence module"
+        }
+      ],
+      "search_text": "top015 topic caa-related inflammation real-world mimic performance is incomplete  caa high top015 caa-related inflammation caa clinical syndrome core 02-diagnostic-criteria-and-rating-systems high r008;r057;r061 real-world mimic performance is incomplete add differential and treatment-evidence module"
+    },
+    {
+      "id": "TOP016",
+      "type": "topic",
+      "title": "ARIA",
+      "summary": "Predictive markers and treatment-specific transportability remain limited",
+      "status": "",
+      "state": "",
+      "domain": "CAA",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP016"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "ARIA"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "CAA"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "safety framework"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "22-management-prevention-and-safety"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R040;R055"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Predictive markers and treatment-specific transportability remain limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create drug-specific monitoring comparisons"
+        }
+      ],
+      "search_text": "top016 topic aria predictive markers and treatment-specific transportability remain limited  caa essential top016 aria caa safety framework core 22-management-prevention-and-safety essential r040;r055 predictive markers and treatment-specific transportability remain limited create drug-specific monitoring comparisons"
+    },
+    {
+      "id": "TOP017",
+      "type": "topic",
+      "title": "Mixed CAA and arteriolosclerosis",
+      "summary": "Interaction versus additivity is unresolved",
+      "status": "",
+      "state": "",
+      "domain": "Mixed pathology",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP017"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Mixed CAA and arteriolosclerosis"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Mixed pathology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "causal model"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "19-mixed-pathology-and-cognitive-attribution"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003;R004;R050"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Interaction versus additivity is unresolved"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add interaction-model examples and negative controls"
+        }
+      ],
+      "search_text": "top017 topic mixed caa and arteriolosclerosis interaction versus additivity is unresolved  mixed pathology essential top017 mixed caa and arteriolosclerosis mixed pathology causal model deep 19-mixed-pathology-and-cognitive-attribution essential r003;r004;r050 interaction versus additivity is unresolved add interaction-model examples and negative controls"
+    },
+    {
+      "id": "TOP018",
+      "type": "topic",
+      "title": "ADNC LATE-NC and hippocampal sclerosis",
+      "summary": "Temporal and causal direction are unresolved",
+      "status": "",
+      "state": "",
+      "domain": "Mixed pathology",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP018"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "ADNC LATE-NC and hippocampal sclerosis"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Mixed pathology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "co-pathology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "19-mixed-pathology-and-cognitive-attribution"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R033;R034;R050"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Temporal and causal direction are unresolved"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Expand mediation and regional vulnerability evidence"
+        }
+      ],
+      "search_text": "top018 topic adnc late-nc and hippocampal sclerosis temporal and causal direction are unresolved  mixed pathology essential top018 adnc late-nc and hippocampal sclerosis mixed pathology co-pathology deep 19-mixed-pathology-and-cognitive-attribution essential r033;r034;r050 temporal and causal direction are unresolved expand mediation and regional vulnerability evidence"
+    },
+    {
+      "id": "TOP019",
+      "type": "topic",
+      "title": "Recent small subcortical infarct",
+      "summary": "Clinical-imaging mismatch and lesion evolution",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP019"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Recent small subcortical infarct"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "STRIVE phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R002"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Clinical-imaging mismatch and lesion evolution"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add sequence-timing examples"
+        }
+      ],
+      "search_text": "top019 topic recent small subcortical infarct clinical-imaging mismatch and lesion evolution  imaging essential top019 recent small subcortical infarct imaging strive phenotype core 18-mri-phenotypes-and-strive-2 essential r001;r002 clinical-imaging mismatch and lesion evolution add sequence-timing examples"
+    },
+    {
+      "id": "TOP020",
+      "type": "topic",
+      "title": "Lacune",
+      "summary": "Mimics and causal attribution remain problematic",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP020"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Lacune"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "STRIVE phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R002;R063"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Mimics and causal attribution remain problematic"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add morphology and differential gallery"
+        }
+      ],
+      "search_text": "top020 topic lacune mimics and causal attribution remain problematic  imaging essential top020 lacune imaging strive phenotype deep 18-mri-phenotypes-and-strive-2 essential r001;r002;r063 mimics and causal attribution remain problematic add morphology and differential gallery"
+    },
+    {
+      "id": "TOP021",
+      "type": "topic",
+      "title": "White-matter hyperintensity",
+      "summary": "Spatial and biological heterogeneity are underrepresented",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP021"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "White-matter hyperintensity"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "STRIVE phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R037"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Spatial and biological heterogeneity are underrepresented"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add pattern and quantitative-method comparison"
+        }
+      ],
+      "search_text": "top021 topic white-matter hyperintensity spatial and biological heterogeneity are underrepresented  imaging essential top021 white-matter hyperintensity imaging strive phenotype deep 18-mri-phenotypes-and-strive-2 essential r001;r037 spatial and biological heterogeneity are underrepresented add pattern and quantitative-method comparison"
+    },
+    {
+      "id": "TOP022",
+      "type": "topic",
+      "title": "Perivascular spaces",
+      "summary": "Measurement and etiologic specificity remain limited",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP022"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Perivascular spaces"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "STRIVE phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R012"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Measurement and etiologic specificity remain limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add rating and segmentation reliability evidence"
+        }
+      ],
+      "search_text": "top022 topic perivascular spaces measurement and etiologic specificity remain limited  imaging essential top022 perivascular spaces imaging strive phenotype deep 18-mri-phenotypes-and-strive-2 essential r001;r012 measurement and etiologic specificity remain limited add rating and segmentation reliability evidence"
+    },
+    {
+      "id": "TOP023",
+      "type": "topic",
+      "title": "Cerebral microbleeds",
+      "summary": "Sequence and mimic sensitivity alter counts",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP023"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Cerebral microbleeds"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "STRIVE phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R023;R024;R046"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Sequence and mimic sensitivity alter counts"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add GRE versus SWI and mimic examples"
+        }
+      ],
+      "search_text": "top023 topic cerebral microbleeds sequence and mimic sensitivity alter counts  imaging essential top023 cerebral microbleeds imaging strive phenotype deep 18-mri-phenotypes-and-strive-2 essential r001;r023;r024;r046 sequence and mimic sensitivity alter counts add gre versus swi and mimic examples"
+    },
+    {
+      "id": "TOP024",
+      "type": "topic",
+      "title": "Cortical superficial siderosis",
+      "summary": "Extent and progression require harmonization",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP024"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Cortical superficial siderosis"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "STRIVE phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R030;R047"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Extent and progression require harmonization"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Build prognosis evidence profile"
+        }
+      ],
+      "search_text": "top024 topic cortical superficial siderosis extent and progression require harmonization  imaging essential top024 cortical superficial siderosis imaging strive phenotype deep 18-mri-phenotypes-and-strive-2 essential r001;r030;r047 extent and progression require harmonization build prognosis evidence profile"
+    },
+    {
+      "id": "TOP025",
+      "type": "topic",
+      "title": "Cortical microinfarcts",
+      "summary": "In-vivo sensitivity remains limited",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP025"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Cortical microinfarcts"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology-imaging phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R004"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "In-vivo sensitivity remains limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add high-field and pathology-linked evidence"
+        }
+      ],
+      "search_text": "top025 topic cortical microinfarcts in-vivo sensitivity remains limited  imaging high top025 cortical microinfarcts imaging pathology-imaging phenotype core 18-mri-phenotypes-and-strive-2 high r001;r004 in-vivo sensitivity remains limited add high-field and pathology-linked evidence"
+    },
+    {
+      "id": "TOP026",
+      "type": "topic",
+      "title": "Brain atrophy in cSVD",
+      "summary": "Specificity and mediation remain unclear",
+      "status": "",
+      "state": "",
+      "domain": "Imaging",
+      "priority": "medium",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP026"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Brain atrophy in cSVD"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "secondary phenotype"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "01-field-primer"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "medium"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Specificity and mediation remain unclear"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Develop dedicated module in a later release"
+        }
+      ],
+      "search_text": "top026 topic brain atrophy in csvd specificity and mediation remain unclear  imaging medium top026 brain atrophy in csvd imaging secondary phenotype mapped 01-field-primer medium r001 specificity and mediation remain unclear develop dedicated module in a later release"
+    },
+    {
+      "id": "TOP027",
+      "type": "topic",
+      "title": "Diffusion MRI free water and PSMD",
+      "summary": "Interpretability and treatment responsiveness are unsettled",
+      "status": "",
+      "state": "",
+      "domain": "Quantitative MRI",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP027"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Diffusion MRI free water and PSMD"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Quantitative MRI"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "biomarker"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "03-biomarkers-and-tools"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R021;R022"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Interpretability and treatment responsiveness are unsettled"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Expand processing and validation comparisons"
+        }
+      ],
+      "search_text": "top027 topic diffusion mri free water and psmd interpretability and treatment responsiveness are unsettled  quantitative mri high top027 diffusion mri free water and psmd quantitative mri biomarker core 03-biomarkers-and-tools high r021;r022 interpretability and treatment responsiveness are unsettled expand processing and validation comparisons"
+    },
+    {
+      "id": "TOP028",
+      "type": "topic",
+      "title": "Cerebrovascular reactivity",
+      "summary": "Etiologic specificity and scalable protocols are limited",
+      "status": "",
+      "state": "",
+      "domain": "Physiology",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP028"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Cerebrovascular reactivity"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Physiology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "biomarker"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "03-biomarkers-and-tools"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R054;R060"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Etiologic specificity and scalable protocols are limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add gas and non-gas paradigm comparison"
+        }
+      ],
+      "search_text": "top028 topic cerebrovascular reactivity etiologic specificity and scalable protocols are limited  physiology high top028 cerebrovascular reactivity physiology biomarker core 03-biomarkers-and-tools high r054;r060 etiologic specificity and scalable protocols are limited add gas and non-gas paradigm comparison"
+    },
+    {
+      "id": "TOP029",
+      "type": "topic",
+      "title": "Perfusion and hemodynamics",
+      "summary": "Acquisition heterogeneity is substantial",
+      "status": "",
+      "state": "",
+      "domain": "Physiology",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP029"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Perfusion and hemodynamics"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Physiology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "biomarker"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R037"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Acquisition heterogeneity is substantial"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create perfusion-method module"
+        }
+      ],
+      "search_text": "top029 topic perfusion and hemodynamics acquisition heterogeneity is substantial  physiology high top029 perfusion and hemodynamics physiology biomarker mapped 15-vessel-anatomy-and-neurovascular-unit high r037 acquisition heterogeneity is substantial create perfusion-method module"
+    },
+    {
+      "id": "TOP030",
+      "type": "topic",
+      "title": "BBB permeability imaging",
+      "summary": "Temporal meaning and standardization remain limited",
+      "status": "",
+      "state": "",
+      "domain": "Quantitative MRI",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP030"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "BBB permeability imaging"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Quantitative MRI"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "biomarker"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "15-vessel-anatomy-and-neurovascular-unit"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R013"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Temporal meaning and standardization remain limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add dynamic contrast method dossier"
+        }
+      ],
+      "search_text": "top030 topic bbb permeability imaging temporal meaning and standardization remain limited  quantitative mri high top030 bbb permeability imaging quantitative mri biomarker core 15-vessel-anatomy-and-neurovascular-unit high r013 temporal meaning and standardization remain limited add dynamic contrast method dossier"
+    },
+    {
+      "id": "TOP031",
+      "type": "topic",
+      "title": "Quantitative susceptibility and vessel imaging",
+      "summary": "Clinical and pathology validation remain incomplete",
+      "status": "",
+      "state": "",
+      "domain": "Quantitative MRI",
+      "priority": "medium",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP031"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Quantitative susceptibility and vessel imaging"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Quantitative MRI"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "emerging method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "medium"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Clinical and pathology validation remain incomplete"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add advanced MRI module"
+        }
+      ],
+      "search_text": "top031 topic quantitative susceptibility and vessel imaging clinical and pathology validation remain incomplete  quantitative mri medium top031 quantitative susceptibility and vessel imaging quantitative mri emerging method mapped 18-mri-phenotypes-and-strive-2 medium r001 clinical and pathology validation remain incomplete add advanced mri module"
+    },
+    {
+      "id": "TOP032",
+      "type": "topic",
+      "title": "STRIVE-1 and STRIVE-2",
+      "summary": "Feature-specific reliability varies",
+      "status": "",
+      "state": "",
+      "domain": "Standards",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP032"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "STRIVE-1 and STRIVE-2"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Standards"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "terminology standard"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "18-mri-phenotypes-and-strive-2"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R002"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Feature-specific reliability varies"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create downloadable phenotype checklist"
+        }
+      ],
+      "search_text": "top032 topic strive-1 and strive-2 feature-specific reliability varies  standards essential top032 strive-1 and strive-2 standards terminology standard deep 18-mri-phenotypes-and-strive-2 essential r001;r002 feature-specific reliability varies create downloadable phenotype checklist"
+    },
+    {
+      "id": "TOP033",
+      "type": "topic",
+      "title": "Boston criteria v2.0",
+      "summary": "Spectrum and nonhemorrhagic performance vary",
+      "status": "",
+      "state": "",
+      "domain": "Diagnosis",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP033"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Boston criteria v2.0"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Diagnosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "diagnostic criteria"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "02-diagnostic-criteria-and-rating-systems"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R006;R051;R052"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Spectrum and nonhemorrhagic performance vary"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Expand interactive application examples"
+        }
+      ],
+      "search_text": "top033 topic boston criteria v2.0 spectrum and nonhemorrhagic performance vary  diagnosis essential top033 boston criteria v2.0 diagnosis diagnostic criteria deep 02-diagnostic-criteria-and-rating-systems essential r006;r051;r052 spectrum and nonhemorrhagic performance vary expand interactive application examples"
+    },
+    {
+      "id": "TOP034",
+      "type": "topic",
+      "title": "Edinburgh CT and genetic criteria",
+      "summary": "External validation and genotype availability limit transport",
+      "status": "",
+      "state": "",
+      "domain": "Diagnosis",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP034"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Edinburgh CT and genetic criteria"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Diagnosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "diagnostic criteria"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "02-diagnostic-criteria-and-rating-systems"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R007"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "External validation and genotype availability limit transport"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add direct comparison with Boston v2.0"
+        }
+      ],
+      "search_text": "top034 topic edinburgh ct and genetic criteria external validation and genotype availability limit transport  diagnosis high top034 edinburgh ct and genetic criteria diagnosis diagnostic criteria core 02-diagnostic-criteria-and-rating-systems high r007 external validation and genotype availability limit transport add direct comparison with boston v2.0"
+    },
+    {
+      "id": "TOP035",
+      "type": "topic",
+      "title": "CAA-ri clinicoradiologic criteria",
+      "summary": "Mimics and verification bias remain important",
+      "status": "",
+      "state": "",
+      "domain": "Diagnosis",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP035"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "CAA-ri clinicoradiologic criteria"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Diagnosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "diagnostic criteria"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "02-diagnostic-criteria-and-rating-systems"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R008;R057;R061"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Mimics and verification bias remain important"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add specialist differential workflow"
+        }
+      ],
+      "search_text": "top035 topic caa-ri clinicoradiologic criteria mimics and verification bias remain important  diagnosis high top035 caa-ri clinicoradiologic criteria diagnosis diagnostic criteria core 02-diagnostic-criteria-and-rating-systems high r008;r057;r061 mimics and verification bias remain important add specialist differential workflow"
+    },
+    {
+      "id": "TOP036",
+      "type": "topic",
+      "title": "VCING",
+      "summary": "Contribution judgments remain incomplete in mixed disease",
+      "status": "",
+      "state": "",
+      "domain": "Diagnosis",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP036"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "VCING"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Diagnosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "neuropathology framework"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "20-neuropathology-and-reference-standards"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R025"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Contribution judgments remain incomplete in mixed disease"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add worked attribution examples"
+        }
+      ],
+      "search_text": "top036 topic vcing contribution judgments remain incomplete in mixed disease  diagnosis high top036 vcing diagnosis neuropathology framework core 20-neuropathology-and-reference-standards high r025 contribution judgments remain incomplete in mixed disease add worked attribution examples"
+    },
+    {
+      "id": "TOP037",
+      "type": "topic",
+      "title": "VasCog-2-WSO",
+      "summary": "Implementation and biomarker transport require study",
+      "status": "",
+      "state": "",
+      "domain": "Diagnosis",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP037"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "VasCog-2-WSO"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Diagnosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "cognitive criteria"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R065;R066"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Implementation and biomarker transport require study"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add operational criteria profile"
+        }
+      ],
+      "search_text": "top037 topic vascog-2-wso implementation and biomarker transport require study  diagnosis essential top037 vascog-2-wso diagnosis cognitive criteria core 21-clinical-spectrum-and-outcomes essential r065;r066 implementation and biomarker transport require study add operational criteria profile"
+    },
+    {
+      "id": "TOP038",
+      "type": "topic",
+      "title": "CAA consensus pathology protocol",
+      "summary": "Interlaboratory and sampling variation persist",
+      "status": "",
+      "state": "",
+      "domain": "Standards",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP038"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "CAA consensus pathology protocol"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Standards"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology protocol"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "20-neuropathology-and-reference-standards"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R026"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Interlaboratory and sampling variation persist"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add specimen sampling checklist"
+        }
+      ],
+      "search_text": "top038 topic caa consensus pathology protocol interlaboratory and sampling variation persist  standards essential top038 caa consensus pathology protocol standards pathology protocol deep 20-neuropathology-and-reference-standards essential r026 interlaboratory and sampling variation persist add specimen sampling checklist"
+    },
+    {
+      "id": "TOP039",
+      "type": "topic",
+      "title": "B-ASC pathology assessment",
+      "summary": "Regional sampling and construct heterogeneity persist",
+      "status": "",
+      "state": "",
+      "domain": "Standards",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP039"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "B-ASC pathology assessment"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Standards"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology rating"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "20-neuropathology-and-reference-standards"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Regional sampling and construct heterogeneity persist"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Build digital reference set"
+        }
+      ],
+      "search_text": "top039 topic b-asc pathology assessment regional sampling and construct heterogeneity persist  standards essential top039 b-asc pathology assessment standards pathology rating deep 20-neuropathology-and-reference-standards essential r003 regional sampling and construct heterogeneity persist build digital reference set"
+    },
+    {
+      "id": "TOP040",
+      "type": "topic",
+      "title": "ARTS",
+      "summary": "Independent pathology-linked transportability is incomplete",
+      "status": "",
+      "state": "",
+      "domain": "Arteriolosclerosis",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP040"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "ARTS"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Arteriolosclerosis"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "biomarker"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "03-biomarkers-and-tools"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R017;R018;R019"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Independent pathology-linked transportability is incomplete"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create full reproducibility and external-validation dossier"
+        }
+      ],
+      "search_text": "top040 topic arts independent pathology-linked transportability is incomplete  arteriolosclerosis essential top040 arts arteriolosclerosis biomarker deep 03-biomarkers-and-tools essential r017;r018;r019 independent pathology-linked transportability is incomplete create full reproducibility and external-validation dossier"
+    },
+    {
+      "id": "TOP041",
+      "type": "topic",
+      "title": "Fluid biomarkers",
+      "summary": "Standalone etiologic specificity is not established",
+      "status": "",
+      "state": "",
+      "domain": "Biomarkers",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP041"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Fluid biomarkers"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Biomarkers"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "biomarker"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "03-biomarkers-and-tools"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R031;R053;R058"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Standalone etiologic specificity is not established"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add analyte-by-context comparison"
+        }
+      ],
+      "search_text": "top041 topic fluid biomarkers standalone etiologic specificity is not established  biomarkers high top041 fluid biomarkers biomarkers biomarker core 03-biomarkers-and-tools high r031;r053;r058 standalone etiologic specificity is not established add analyte-by-context comparison"
+    },
+    {
+      "id": "TOP042",
+      "type": "topic",
+      "title": "Amyloid PET",
+      "summary": "Vascular versus parenchymal signal cannot be separated reliably at patient level",
+      "status": "",
+      "state": "",
+      "domain": "Molecular imaging",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP042"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Amyloid PET"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Molecular imaging"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "biomarker"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "03-biomarkers-and-tools"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R032;R059"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Vascular versus parenchymal signal cannot be separated reliably at patient level"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add tracer and regional-analysis comparison"
+        }
+      ],
+      "search_text": "top042 topic amyloid pet vascular versus parenchymal signal cannot be separated reliably at patient level  molecular imaging high top042 amyloid pet molecular imaging biomarker core 03-biomarkers-and-tools high r032;r059 vascular versus parenchymal signal cannot be separated reliably at patient level add tracer and regional-analysis comparison"
+    },
+    {
+      "id": "TOP043",
+      "type": "topic",
+      "title": "Digital neuropathology",
+      "summary": "Domain shift and external validation remain limited",
+      "status": "",
+      "state": "",
+      "domain": "Pathology",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP043"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Digital neuropathology"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Pathology"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "measurement method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "20-neuropathology-and-reference-standards"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R016"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Domain shift and external validation remain limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add model-card requirements"
+        }
+      ],
+      "search_text": "top043 topic digital neuropathology domain shift and external validation remain limited  pathology high top043 digital neuropathology pathology measurement method core 20-neuropathology-and-reference-standards high r016 domain shift and external validation remain limited add model-card requirements"
+    },
+    {
+      "id": "TOP044",
+      "type": "topic",
+      "title": "Neuropathology as reference standard",
+      "summary": "Sampling interval and reader variability create imperfect truth",
+      "status": "",
+      "state": "",
+      "domain": "Methods",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP044"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Neuropathology as reference standard"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Methods"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "reference standard"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "20-neuropathology-and-reference-standards"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R003;R026"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Sampling interval and reader variability create imperfect truth"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add reference-standard bias checklist"
+        }
+      ],
+      "search_text": "top044 topic neuropathology as reference standard sampling interval and reader variability create imperfect truth  methods essential top044 neuropathology as reference standard methods reference standard deep 20-neuropathology-and-reference-standards essential r003;r026 sampling interval and reader variability create imperfect truth add reference-standard bias checklist"
+    },
+    {
+      "id": "TOP045",
+      "type": "topic",
+      "title": "Lacunar ischemic stroke",
+      "summary": "Mechanism can be heterogeneous despite small subcortical appearance",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP045"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Lacunar ischemic stroke"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "clinical syndrome"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R063"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Mechanism can be heterogeneous despite small subcortical appearance"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add acute and secondary prevention evidence tables"
+        }
+      ],
+      "search_text": "top045 topic lacunar ischemic stroke mechanism can be heterogeneous despite small subcortical appearance  clinical essential top045 lacunar ischemic stroke clinical clinical syndrome deep 21-clinical-spectrum-and-outcomes essential r063 mechanism can be heterogeneous despite small subcortical appearance add acute and secondary prevention evidence tables"
+    },
+    {
+      "id": "TOP046",
+      "type": "topic",
+      "title": "Lobar and deep intracerebral hemorrhage",
+      "summary": "Competing ischemic and hemorrhagic risks complicate decisions",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP046"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Lobar and deep intracerebral hemorrhage"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "clinical syndrome"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R004;R009"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Competing ischemic and hemorrhagic risks complicate decisions"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add recurrence and management profiles"
+        }
+      ],
+      "search_text": "top046 topic lobar and deep intracerebral hemorrhage competing ischemic and hemorrhagic risks complicate decisions  clinical essential top046 lobar and deep intracerebral hemorrhage clinical clinical syndrome core 21-clinical-spectrum-and-outcomes essential r004;r009 competing ischemic and hemorrhagic risks complicate decisions add recurrence and management profiles"
+    },
+    {
+      "id": "TOP047",
+      "type": "topic",
+      "title": "Transient focal neurological episodes",
+      "summary": "Mimics and treatment implications require careful distinction",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP047"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Transient focal neurological episodes"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "clinical syndrome"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R004;R009"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Mimics and treatment implications require careful distinction"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add seizure TIA and migraine differential"
+        }
+      ],
+      "search_text": "top047 topic transient focal neurological episodes mimics and treatment implications require careful distinction  clinical high top047 transient focal neurological episodes clinical clinical syndrome core 21-clinical-spectrum-and-outcomes high r004;r009 mimics and treatment implications require careful distinction add seizure tia and migraine differential"
+    },
+    {
+      "id": "TOP048",
+      "type": "topic",
+      "title": "Covert cSVD",
+      "summary": "Direct trial evidence remains limited",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP048"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Covert cSVD"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "clinical state"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R062"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Direct trial evidence remains limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add incidental-finding communication framework"
+        }
+      ],
+      "search_text": "top048 topic covert csvd direct trial evidence remains limited  clinical essential top048 covert csvd clinical clinical state deep 21-clinical-spectrum-and-outcomes essential r062 direct trial evidence remains limited add incidental-finding communication framework"
+    },
+    {
+      "id": "TOP049",
+      "type": "topic",
+      "title": "Vascular cognitive impairment",
+      "summary": "Attribution in mixed disease remains difficult",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP049"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Vascular cognitive impairment"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "outcome"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R025;R065;R066"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Attribution in mixed disease remains difficult"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add cognitive-domain and causal-pathway maps"
+        }
+      ],
+      "search_text": "top049 topic vascular cognitive impairment attribution in mixed disease remains difficult  clinical essential top049 vascular cognitive impairment clinical outcome deep 21-clinical-spectrum-and-outcomes essential r025;r065;r066 attribution in mixed disease remains difficult add cognitive-domain and causal-pathway maps"
+    },
+    {
+      "id": "TOP050",
+      "type": "topic",
+      "title": "Gait mobility and falls",
+      "summary": "Measurement and intervention evidence are heterogeneous",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP050"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Gait mobility and falls"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "outcome"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R062;R066"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Measurement and intervention evidence are heterogeneous"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Develop phenotype and endpoint module"
+        }
+      ],
+      "search_text": "top050 topic gait mobility and falls measurement and intervention evidence are heterogeneous  clinical high top050 gait mobility and falls clinical outcome core 21-clinical-spectrum-and-outcomes high r062;r066 measurement and intervention evidence are heterogeneous develop phenotype and endpoint module"
+    },
+    {
+      "id": "TOP051",
+      "type": "topic",
+      "title": "Mood apathy and neuropsychiatric manifestations",
+      "summary": "Construct and causal specificity are limited",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "medium",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP051"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Mood apathy and neuropsychiatric manifestations"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "outcome"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "medium"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R062;R066"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Construct and causal specificity are limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add patient-centered outcomes module"
+        }
+      ],
+      "search_text": "top051 topic mood apathy and neuropsychiatric manifestations construct and causal specificity are limited  clinical medium top051 mood apathy and neuropsychiatric manifestations clinical outcome mapped 21-clinical-spectrum-and-outcomes medium r062;r066 construct and causal specificity are limited add patient-centered outcomes module"
+    },
+    {
+      "id": "TOP052",
+      "type": "topic",
+      "title": "Progression disability and mortality",
+      "summary": "Comparable longitudinal endpoints are lacking",
+      "status": "",
+      "state": "",
+      "domain": "Clinical",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP052"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Progression disability and mortality"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Clinical"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "prognosis"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "21-clinical-spectrum-and-outcomes"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R036;R037"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Comparable longitudinal endpoints are lacking"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create outcome harmonization map"
+        }
+      ],
+      "search_text": "top052 topic progression disability and mortality comparable longitudinal endpoints are lacking  clinical high top052 progression disability and mortality clinical prognosis core 21-clinical-spectrum-and-outcomes high r036;r037 comparable longitudinal endpoints are lacking create outcome harmonization map"
+    },
+    {
+      "id": "TOP053",
+      "type": "topic",
+      "title": "CADASIL and NOTCH3",
+      "summary": "Variant interpretation and phenotypic variability complicate inference",
+      "status": "",
+      "state": "",
+      "domain": "Monogenic cSVD",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP053"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "CADASIL and NOTCH3"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Monogenic cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "genetic disorder"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R064"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Variant interpretation and phenotypic variability complicate inference"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add gene-specific evidence dossier"
+        }
+      ],
+      "search_text": "top053 topic cadasil and notch3 variant interpretation and phenotypic variability complicate inference  monogenic csvd essential top053 cadasil and notch3 monogenic csvd genetic disorder core 23-monogenic-and-other-small-vessel-diseases essential r064 variant interpretation and phenotypic variability complicate inference add gene-specific evidence dossier"
+    },
+    {
+      "id": "TOP054",
+      "type": "topic",
+      "title": "HTRA1-related disease and CARASIL",
+      "summary": "Recessive and dominant phenotypes overlap",
+      "status": "",
+      "state": "",
+      "domain": "Monogenic cSVD",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP054"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "HTRA1-related disease and CARASIL"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Monogenic cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "genetic disorder"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R064"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Recessive and dominant phenotypes overlap"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add inheritance and imaging comparison"
+        }
+      ],
+      "search_text": "top054 topic htra1-related disease and carasil recessive and dominant phenotypes overlap  monogenic csvd high top054 htra1-related disease and carasil monogenic csvd genetic disorder core 23-monogenic-and-other-small-vessel-diseases high r064 recessive and dominant phenotypes overlap add inheritance and imaging comparison"
+    },
+    {
+      "id": "TOP055",
+      "type": "topic",
+      "title": "COL4A1 and COL4A2 disorders",
+      "summary": "Systemic and cerebral phenotypes are variable",
+      "status": "",
+      "state": "",
+      "domain": "Monogenic cSVD",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP055"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "COL4A1 and COL4A2 disorders"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Monogenic cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "genetic disorder"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R064"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Systemic and cerebral phenotypes are variable"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add multisystem red-flag table"
+        }
+      ],
+      "search_text": "top055 topic col4a1 and col4a2 disorders systemic and cerebral phenotypes are variable  monogenic csvd high top055 col4a1 and col4a2 disorders monogenic csvd genetic disorder core 23-monogenic-and-other-small-vessel-diseases high r064 systemic and cerebral phenotypes are variable add multisystem red-flag table"
+    },
+    {
+      "id": "TOP056",
+      "type": "topic",
+      "title": "Fabry disease",
+      "summary": "Imaging patterns are not sufficiently specific alone",
+      "status": "",
+      "state": "",
+      "domain": "Monogenic cSVD",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP056"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Fabry disease"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Monogenic cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "genetic disorder"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R064"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Imaging patterns are not sufficiently specific alone"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add testing and differential evidence"
+        }
+      ],
+      "search_text": "top056 topic fabry disease imaging patterns are not sufficiently specific alone  monogenic csvd high top056 fabry disease monogenic csvd genetic disorder core 23-monogenic-and-other-small-vessel-diseases high r064 imaging patterns are not sufficiently specific alone add testing and differential evidence"
+    },
+    {
+      "id": "TOP057",
+      "type": "topic",
+      "title": "RVCL-S TREX1 and systemic vasculopathy",
+      "summary": "Rarity limits natural-history evidence",
+      "status": "",
+      "state": "",
+      "domain": "Monogenic cSVD",
+      "priority": "medium",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP057"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "RVCL-S TREX1 and systemic vasculopathy"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Monogenic cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "genetic disorder"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "medium"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R064"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Rarity limits natural-history evidence"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create rare-disease record set"
+        }
+      ],
+      "search_text": "top057 topic rvcl-s trex1 and systemic vasculopathy rarity limits natural-history evidence  monogenic csvd medium top057 rvcl-s trex1 and systemic vasculopathy monogenic csvd genetic disorder mapped 23-monogenic-and-other-small-vessel-diseases medium r064 rarity limits natural-history evidence create rare-disease record set"
+    },
+    {
+      "id": "TOP058",
+      "type": "topic",
+      "title": "Hereditary CAA",
+      "summary": "Transport from hereditary to sporadic CAA is incomplete",
+      "status": "",
+      "state": "",
+      "domain": "Monogenic cSVD",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP058"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Hereditary CAA"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Monogenic cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "genetic disorder"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R056"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Transport from hereditary to sporadic CAA is incomplete"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Separate model value from direct generalization"
+        }
+      ],
+      "search_text": "top058 topic hereditary caa transport from hereditary to sporadic caa is incomplete  monogenic csvd high top058 hereditary caa monogenic csvd genetic disorder core 23-monogenic-and-other-small-vessel-diseases high r056 transport from hereditary to sporadic caa is incomplete separate model value from direct generalization"
+    },
+    {
+      "id": "TOP059",
+      "type": "topic",
+      "title": "Inflammatory infectious toxic and radiation-associated SVD",
+      "summary": "Current coverage is orienting rather than comprehensive",
+      "status": "",
+      "state": "",
+      "domain": "Other cSVD",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP059"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Inflammatory infectious toxic and radiation-associated SVD"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Other cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "differential family"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R036"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Current coverage is orienting rather than comprehensive"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create separate expert-reviewed modules"
+        }
+      ],
+      "search_text": "top059 topic inflammatory infectious toxic and radiation-associated svd current coverage is orienting rather than comprehensive  other csvd high top059 inflammatory infectious toxic and radiation-associated svd other csvd differential family mapped 23-monogenic-and-other-small-vessel-diseases high r036 current coverage is orienting rather than comprehensive create separate expert-reviewed modules"
+    },
+    {
+      "id": "TOP060",
+      "type": "topic",
+      "title": "Venous and venular small-vessel disease",
+      "summary": "Terminology and in-vivo markers are underdeveloped",
+      "status": "",
+      "state": "",
+      "domain": "Other cSVD",
+      "priority": "medium",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP060"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Venous and venular small-vessel disease"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Other cSVD"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "pathology family"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "23-monogenic-and-other-small-vessel-diseases"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "medium"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R036"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Terminology and in-vivo markers are underdeveloped"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add venous collagenosis evidence map"
+        }
+      ],
+      "search_text": "top060 topic venous and venular small-vessel disease terminology and in-vivo markers are underdeveloped  other csvd medium top060 venous and venular small-vessel disease other csvd pathology family mapped 23-monogenic-and-other-small-vessel-diseases medium r036 terminology and in-vivo markers are underdeveloped add venous collagenosis evidence map"
+    },
+    {
+      "id": "TOP061",
+      "type": "topic",
+      "title": "Blood-pressure management",
+      "summary": "Targets depend on syndrome and evidence context",
+      "status": "",
+      "state": "",
+      "domain": "Management",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP061"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Blood-pressure management"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Management"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "prevention"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "22-management-prevention-and-safety"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R009;R062;R063"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Targets depend on syndrome and evidence context"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add trial-level evidence tables"
+        }
+      ],
+      "search_text": "top061 topic blood-pressure management targets depend on syndrome and evidence context  management essential top061 blood-pressure management management prevention core 22-management-prevention-and-safety essential r009;r062;r063 targets depend on syndrome and evidence context add trial-level evidence tables"
+    },
+    {
+      "id": "TOP062",
+      "type": "topic",
+      "title": "Antiplatelet and anticoagulant decisions",
+      "summary": "Competing risks and sparse subgroup evidence limit certainty",
+      "status": "",
+      "state": "",
+      "domain": "Management",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP062"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Antiplatelet and anticoagulant decisions"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Management"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "safety decision"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "22-management-prevention-and-safety"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R009;R041;R062;R063"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Competing risks and sparse subgroup evidence limit certainty"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Build indication-by-phenotype evidence matrix"
+        }
+      ],
+      "search_text": "top062 topic antiplatelet and anticoagulant decisions competing risks and sparse subgroup evidence limit certainty  management essential top062 antiplatelet and anticoagulant decisions management safety decision core 22-management-prevention-and-safety essential r009;r041;r062;r063 competing risks and sparse subgroup evidence limit certainty build indication-by-phenotype evidence matrix"
+    },
+    {
+      "id": "TOP063",
+      "type": "topic",
+      "title": "Lipid lowering and vascular risk modification",
+      "summary": "CAA-specific evidence and indication context matter",
+      "status": "",
+      "state": "",
+      "domain": "Management",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP063"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Lipid lowering and vascular risk modification"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Management"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "prevention"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "22-management-prevention-and-safety"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R009;R062;R063"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "CAA-specific evidence and indication context matter"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add primary versus secondary prevention distinction"
+        }
+      ],
+      "search_text": "top063 topic lipid lowering and vascular risk modification caa-specific evidence and indication context matter  management high top063 lipid lowering and vascular risk modification management prevention core 22-management-prevention-and-safety high r009;r062;r063 caa-specific evidence and indication context matter add primary versus secondary prevention distinction"
+    },
+    {
+      "id": "TOP064",
+      "type": "topic",
+      "title": "Anti-amyloid therapy and ARIA",
+      "summary": "Drug-specific protocols and real-world risk prediction are evolving",
+      "status": "",
+      "state": "",
+      "domain": "Management",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP064"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Anti-amyloid therapy and ARIA"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Management"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "safety decision"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "22-management-prevention-and-safety"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R040;R055"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Drug-specific protocols and real-world risk prediction are evolving"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Create versioned treatment-specific pages"
+        }
+      ],
+      "search_text": "top064 topic anti-amyloid therapy and aria drug-specific protocols and real-world risk prediction are evolving  management essential top064 anti-amyloid therapy and aria management safety decision deep 22-management-prevention-and-safety essential r040;r055 drug-specific protocols and real-world risk prediction are evolving create versioned treatment-specific pages"
+    },
+    {
+      "id": "TOP065",
+      "type": "topic",
+      "title": "Rehabilitation and cognitive interventions",
+      "summary": "cSVD-specific trial evidence is limited",
+      "status": "",
+      "state": "",
+      "domain": "Management",
+      "priority": "medium",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP065"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Rehabilitation and cognitive interventions"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Management"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "intervention"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "mapped"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "22-management-prevention-and-safety"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "medium"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R066;R067"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "cSVD-specific trial evidence is limited"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add intervention and endpoint review"
+        }
+      ],
+      "search_text": "top065 topic rehabilitation and cognitive interventions csvd-specific trial evidence is limited  management medium top065 rehabilitation and cognitive interventions management intervention mapped 22-management-prevention-and-safety medium r066;r067 csvd-specific trial evidence is limited add intervention and endpoint review"
+    },
+    {
+      "id": "TOP066",
+      "type": "topic",
+      "title": "cSVD clinical trials and endpoints",
+      "summary": "Responsiveness and etiologic specificity remain limiting",
+      "status": "",
+      "state": "",
+      "domain": "Research methods",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP066"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "cSVD clinical trials and endpoints"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Research methods"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "trial methodology"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "05-research-agenda"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R038;R066"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Responsiveness and etiologic specificity remain limiting"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Build endpoint qualification profiles"
+        }
+      ],
+      "search_text": "top066 topic csvd clinical trials and endpoints responsiveness and etiologic specificity remain limiting  research methods high top066 csvd clinical trials and endpoints research methods trial methodology core 05-research-agenda high r038;r066 responsiveness and etiologic specificity remain limiting build endpoint qualification profiles"
+    },
+    {
+      "id": "TOP067",
+      "type": "topic",
+      "title": "Causal inference in mixed pathology",
+      "summary": "Confounding mediation interaction and selection are often conflated",
+      "status": "",
+      "state": "",
+      "domain": "Research methods",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP067"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Causal inference in mixed pathology"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Research methods"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "19-mixed-pathology-and-cognitive-attribution"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R050"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Confounding mediation interaction and selection are often conflated"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add DAG-based worked examples"
+        }
+      ],
+      "search_text": "top067 topic causal inference in mixed pathology confounding mediation interaction and selection are often conflated  research methods essential top067 causal inference in mixed pathology research methods method deep 19-mixed-pathology-and-cognitive-attribution essential r050 confounding mediation interaction and selection are often conflated add dag-based worked examples"
+    },
+    {
+      "id": "TOP068",
+      "type": "topic",
+      "title": "Cohort lineage and independence",
+      "summary": "Nominally separate papers can reuse participants",
+      "status": "",
+      "state": "",
+      "domain": "Research methods",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP068"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Cohort lineage and independence"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Research methods"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "10-cohort-lineage"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R006;R017"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Nominally separate papers can reuse participants"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Require cohort identifiers in every study record"
+        }
+      ],
+      "search_text": "top068 topic cohort lineage and independence nominally separate papers can reuse participants  research methods essential top068 cohort lineage and independence research methods method deep 10-cohort-lineage essential r006;r017 nominally separate papers can reuse participants require cohort identifiers in every study record"
+    },
+    {
+      "id": "TOP069",
+      "type": "topic",
+      "title": "Diagnostic transportability",
+      "summary": "Accuracy varies across populations and presentations",
+      "status": "",
+      "state": "",
+      "domain": "Research methods",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP069"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Diagnostic transportability"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Research methods"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "deep"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "06-diagnostic-transportability"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R006;R051;R052"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Accuracy varies across populations and presentations"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add calibration and decision-curve evidence"
+        }
+      ],
+      "search_text": "top069 topic diagnostic transportability accuracy varies across populations and presentations  research methods essential top069 diagnostic transportability research methods method deep 06-diagnostic-transportability essential r006;r051;r052 accuracy varies across populations and presentations add calibration and decision-curve evidence"
+    },
+    {
+      "id": "TOP070",
+      "type": "topic",
+      "title": "Measurement reliability and harmonization",
+      "summary": "Technical success does not establish biological validity",
+      "status": "",
+      "state": "",
+      "domain": "Research methods",
+      "priority": "essential",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP070"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Measurement reliability and harmonization"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Research methods"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "03-biomarkers-and-tools"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "essential"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001;R021"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Technical success does not establish biological validity"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Build minimum reporting standard"
+        }
+      ],
+      "search_text": "top070 topic measurement reliability and harmonization technical success does not establish biological validity  research methods essential top070 measurement reliability and harmonization research methods method core 03-biomarkers-and-tools essential r001;r021 technical success does not establish biological validity build minimum reporting standard"
+    },
+    {
+      "id": "TOP071",
+      "type": "topic",
+      "title": "Automated segmentation and machine learning",
+      "summary": "Domain shift opaque QC and reference labels limit transport",
+      "status": "",
+      "state": "",
+      "domain": "Computational methods",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP071"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Automated segmentation and machine learning"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Computational methods"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "03-biomarkers-and-tools"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R044;R045"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Domain shift opaque QC and reference labels limit transport"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add model cards and benchmark provenance"
+        }
+      ],
+      "search_text": "top071 topic automated segmentation and machine learning domain shift opaque qc and reference labels limit transport  computational methods high top071 automated segmentation and machine learning computational methods method core 03-biomarkers-and-tools high r044;r045 domain shift opaque qc and reference labels limit transport add model cards and benchmark provenance"
+    },
+    {
+      "id": "TOP072",
+      "type": "topic",
+      "title": "Living evidence synthesis and correction",
+      "summary": "Single-reviewer extraction and incomplete searching limit authority",
+      "status": "",
+      "state": "",
+      "domain": "Stewardship",
+      "priority": "high",
+      "fields": [
+        {
+          "label": "Topic Id",
+          "key": "topic_id",
+          "value": "TOP072"
+        },
+        {
+          "label": "Title",
+          "key": "title",
+          "value": "Living evidence synthesis and correction"
+        },
+        {
+          "label": "Domain",
+          "key": "domain",
+          "value": "Stewardship"
+        },
+        {
+          "label": "Kind",
+          "key": "kind",
+          "value": "method"
+        },
+        {
+          "label": "Depth Status",
+          "key": "depth_status",
+          "value": "core"
+        },
+        {
+          "label": "Current Module",
+          "key": "current_module",
+          "value": "13-living-update-workflow"
+        },
+        {
+          "label": "Priority",
+          "key": "priority",
+          "value": "high"
+        },
+        {
+          "label": "Core Sources",
+          "key": "core_sources",
+          "value": "R001"
+        },
+        {
+          "label": "Gap",
+          "key": "gap",
+          "value": "Single-reviewer extraction and incomplete searching limit authority"
+        },
+        {
+          "label": "Next Action",
+          "key": "next_action",
+          "value": "Add independent review and correction history"
+        }
+      ],
+      "search_text": "top072 topic living evidence synthesis and correction single-reviewer extraction and incomplete searching limit authority  stewardship high top072 living evidence synthesis and correction stewardship method core 13-living-update-workflow high r001 single-reviewer extraction and incomplete searching limit authority add independent review and correction history"
     }
   ]
 }

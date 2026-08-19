@@ -23,6 +23,7 @@ DATASETS = {
     "diagnostic_profile": ("diagnostic_profiles.csv", "profile_id", "name", "next_validation"),
     "case": ("use_cases.csv", "case_id", "title", "scenario"),
     "source": ("source_registry.csv", "ref_id", "title", "topic"),
+    "topic": ("topics.csv", "topic_id", "title", "gap"),
 }
 
 
@@ -80,7 +81,7 @@ def main() -> None:
             })
 
     payload = {
-        "release": "v0.5.1",
+        "release": "v0.6",
         "generated": date.today().isoformat(),
         "site_name": "Cerebral Small Vessel Disease Evidence Atlas",
         "counts": counts,

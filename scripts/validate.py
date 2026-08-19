@@ -54,6 +54,7 @@ def main() -> int:
     claims = ids("claims.csv", "claim_id")
     questions = ids("research_questions.csv", "question_id")
     tools = ids("tools.csv", "tool_id")
+    topics = ids("topics.csv", "topic_id")
 
     checks: dict[str, bool] = {
         "unique_sources": check_unique("source_registry.csv", "ref_id"),
@@ -65,6 +66,7 @@ def main() -> int:
         "unique_cohorts": check_unique("cohorts.csv", "cohort_id"),
         "unique_profiles": check_unique("diagnostic_profiles.csv", "profile_id"),
         "unique_cases": check_unique("use_cases.csv", "case_id"),
+        "unique_topics": check_unique("topics.csv", "topic_id"),
     }
 
     study_rows = rows("studies.csv")
@@ -83,6 +85,11 @@ def main() -> int:
         for row in question_link_rows
     )
     checks["tool_sources_resolve"] = all(split_ids(row.get("key_refs", "")) <= sources for row in tool_rows)
+    checks["topic_sources_resolve"] = all(split_ids(row.get("core_sources", "")) <= sources for row in rows("topics.csv"))
+    checks["topic_coverage_complete"] = len(topics) >= 70 and all(
+        row.get("depth_status", "").strip() and row.get("gap", "").strip() and row.get("next_action", "").strip()
+        for row in rows("topics.csv")
+    )
     checks["question_design_complete"] = all(
         row.get("current_answer", "").strip()
         and row.get("critical_missing_piece", "").strip()
@@ -104,12 +111,17 @@ def main() -> int:
         checks["catalog_count_consistent"] = expected_total == catalog.get("total_records") == len(catalog.get("records", []))
         checks["catalog_ids_unique"] = len({record["id"] for record in catalog["records"]}) == len(catalog["records"])
 
-    required_site = ["index.html", "explore.html", "record.html", "learn.html", "pathways.html", "workbench.html", "methodology.html", "about.html", "assets/styles.css", "assets/app.js"]
+    required_site = ["index.html", "coverage.html", "explore.html", "record.html", "learn.html", "pathways.html", "workbench.html", "methodology.html", "about.html", "assets/styles.css", "assets/app.js"]
     checks["site_complete"] = all((ROOT / "docs" / item).exists() for item in required_site)
-    checks["web_chapters_complete"] = len(list((ROOT / "docs" / "chapters").glob("*.html"))) == 15
+    checks["web_chapters_complete"] = len(list((ROOT / "docs" / "chapters").glob("*.html"))) == 24
     checks["figures_present"] = len(list((ROOT / "docs" / "assets" / "figures").glob("*.png"))) == 14
-    reading_edition = ROOT / "downloads" / "Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx"
+    reading_edition = ROOT / "downloads" / "Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.6.docx"
     checks["reading_edition_present"] = reading_edition.exists() and reading_edition.stat().st_size > 0
+    token_pattern = re.compile(r"\[\[(R\d{3})\]\]")
+    guide_tokens: list[str] = []
+    for path in (ROOT / "content" / "guide").glob("*.md"):
+        guide_tokens.extend(token_pattern.findall(path.read_text(encoding="utf-8")))
+    checks["guide_source_tokens_resolve"] = bool(guide_tokens) and set(guide_tokens) <= sources
 
     broken_links: list[str] = []
     for html_path in (ROOT / "docs").rglob("*.html"):

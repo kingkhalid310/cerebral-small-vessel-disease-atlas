@@ -1,13 +1,13 @@
 # Cerebral Small Vessel Disease Evidence Atlas
 
-[![Release](https://img.shields.io/badge/release-v0.5.1-173f35)](CHANGELOG.md)
-[![Evidence records](https://img.shields.io/badge/evidence_records-61-426a5a)](data/source_registry.csv)
+[![Release](https://img.shields.io/badge/release-v0.6-173f35)](CHANGELOG.md)
+[![Evidence records](https://img.shields.io/badge/evidence_records-67-426a5a)](data/source_registry.csv)
 [![Research questions](https://img.shields.io/badge/research_questions-40-b07d35)](data/research_questions.csv)
 [![Clinical use](https://img.shields.io/badge/clinical_use-educational_only-8c3d32)](DISCLAIMER.md)
 
 An evidence-traceable, question-driven knowledge base for cerebral small vessel disease, with focused coverage of cerebral amyloid angiopathy (CAA), brain arteriolosclerosis, mixed pathology, diagnostic criteria, imaging markers, biomarkers, mechanisms, and unresolved research problems.
 
-**Release:** v0.5.1 synchronized edition
+**Release:** v0.6 depth and coverage edition
 **Status:** curated scoping knowledge base; not a systematic review or clinical decision-support system
 **Website:** [csvd.medics-global.com](https://csvd.medics-global.com/)
 
@@ -27,7 +27,8 @@ It is designed to answer five questions:
 
 | If you want to... | Open... |
 |---|---|
-| Learn the field in sequence | [Web-native 15-chapter course](https://csvd.medics-global.com/learn.html), [Word reading edition](downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx), or [`content/guide/`](content/guide/) |
+| Learn the field in sequence | [Web-native 24-chapter course](https://csvd.medics-global.com/learn.html), [Word reading edition](downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.6.docx), or [`content/guide/`](content/guide/) |
+| Audit breadth and unfinished areas | [Topic coverage map](https://csvd.medics-global.com/coverage.html) or [`data/topics.csv`](data/topics.csv) |
 | See the central unresolved problems | [`data/research_questions.csv`](data/research_questions.csv) |
 | Inspect claim-level evidence | [`data/claims.csv`](data/claims.csv) and [`data/claim_evidence.csv`](data/claim_evidence.csv) |
 | Compare diagnostic approaches | [`data/diagnostic_profiles.csv`](data/diagnostic_profiles.csv) |
@@ -105,4 +106,4 @@ Citation metadata are provided in [`CITATION.cff`](CITATION.cff). No reuse licen
 
 ## Version history
 
-v0.5.1 establishes a synchronized publication system across the repository, website, and Word reading edition, and expands the course to 15 chapters. See [ROADMAP_V0.6.md](ROADMAP_V0.6.md) for the proposed learning-graph edition.
+v0.6 adds nine deep chapters, 72 transparent topic-coverage records, and point-of-claim source links while preserving synchronized publication across the repository, website, and Word guide. It remains a curated scoping knowledge base—not a systematic review, comprehensive textbook, or clinical decision system. See [ROADMAP_V0.6.md](ROADMAP_V0.6.md) for delivered scope and remaining work.

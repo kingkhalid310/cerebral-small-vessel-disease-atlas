@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.6 — Depth and coverage edition — 2026-08-18
+
+- Expanded the learning sequence from 15 to 24 chapters with deep modules on vessel biology, CAA, arteriolosclerosis, MRI/STRIVE-2, neuropathology, mixed pathology, clinical outcomes, management, and inherited/secondary cSVD.
+- Added 72 topic-level coverage records that expose depth, evidence anchors, known gaps, and the next editorial action.
+- Added six guideline/consensus sources and point-of-claim source tokens that become direct links on the website and in Word.
+- Added an automatically generated source list to every linked chapter and a filterable coverage-map page.
+- Kept clinical and evidentiary boundaries explicit: educational use, manual literature stewardship, and no claim of systematic completeness.
+
 ## v0.5.1 — Synchronized edition — 2026-08-18
 
 ### Added
