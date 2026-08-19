@@ -3,7 +3,7 @@
   "product_version": "0.6",
   "release_date": "2026-08-18",
   "chapter_count": 24,
-  "canonical_digest": "8e8d60f36eecf8a231cbde4aa49b05e05aa85aa5b8bb9f2e681a74bbe08ba919",
+  "canonical_digest": "ef12c12878447e1025969fbcb97fac09368ed568b874a818606423c008f31942",
   "canonical_files": {
     "content/guide/00_HOW_TO_THINK.md": "52c6ce252d949c6b4036104c63a74f2131e8c44c0cbf7af71377b0a30bfdabb1",
     "content/guide/01_FIELD_PRIMER_V03.md": "9ffba91bbb917b8205ac5d9a6d311932177869221c28cb00dcc4ed366b0364b5",
@@ -57,13 +57,13 @@
     "requirements-docs.txt": "8f2a9261e987978a1af5a94af3922af988de507495531f0f685d34b7f3dcc895",
     "schemas/catalog.schema.json": "13c06e62a23d4f33a2ff5c15b0b9eeda428f15ca1fe44664cbf860cacf7c1fb0",
     "scripts/build_chapters.py": "f03dc1aecb58f5d1e7ed73835871d43a996b1eeb7b114d55a047974533361b0c",
-    "scripts/build_reading_edition.py": "ddfaef8a667b744ddca4ac100278bcb4e8291743874de474cfd9c518e047f080",
+    "scripts/build_reading_edition.py": "d42e72bdd0d00d2b34f5d2e8a850baac9a0a3cf483ee0f3cdfd02abe729ddcb7",
     "scripts/build_site_data.py": "70fdac31a79416f6fa1ecb68b5971fec5d90045831f38a9f10c6a87a56d3196a",
     "scripts/docx_base.py": "7fcc17858d644a785acaeedceade8b7383227f64ff9d94858e87fef4300fc75e",
     "scripts/sync_release.py": "2c38989a64b1b145f1b2dd9b3fc4a41f412ca1d1a03849bcead3eb6ac84b9db9",
     "scripts/validate.py": "734a60b77682019283999f7df6304861ea5de69e0156c67f54ceadeefd814d33"
   },
-  "published_digest": "bf978031e64b5b6ef02fd7731cda146c2fbd07b1a68a4ed4e104b5e6fe6e3c9a",
+  "published_digest": "e6ab2043b92879b14c0880214065db49f0886a6db544e5af480037ca583b860d",
   "published_files": {
     "docs/chapters/00-how-to-think.html": "be3eef275c0e55931cd0b9ba116ac3d7901cca3e5e1f9be5ae8f3af4ac6375bf",
     "docs/chapters/01-field-primer.html": "408ea5a956edebbd024e3d0aa0f798c7285d2b6cbf75fe5b6236fffa8b01fe16",
@@ -92,9 +92,9 @@
     "docs/data/catalog.json": "962247917454ff5ee61f1d965677aaf8d46548cf981ae1d2df8b5cb4de751079",
     "docs/index.html": "96fc98dd499cbc1f15e3bf2a76eeb2e8e0750c9d5a46c40a2ec7aebd8d21cb84",
     "docs/learn.html": "ad488830bbc9029907515a612df560176039b3be257c3c0e133c8ea661326b45",
-    "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.6.docx": "6f60eb17a9353174fdc35dffa7c4e01def122dd7cfd95f4bf5486c7a2be3f2e8",
+    "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.6.docx": "06cc7128d8d5bd84e92b7460407acdc0e6afd996bce273ac9d5be6754caa8ffc",
     "release/reading_edition_summary.json": "91fbf45e192be9290cfdf04fbe8a238bfa2ef01c93cb345bd4b96c8d2e8770ff"
   },
-  "generated_at_utc": "2026-08-19T03:15:04+00:00",
+  "generated_at_utc": "2026-08-19T03:20:38+00:00",
   "status": "synchronized"
 }
