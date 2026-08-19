@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If this evidence atlas supports your work, please cite the repository release and the primary sources used for individual claims."
 title: "Cerebral Small Vessel Disease Evidence Atlas"
 type: dataset
-version: 0.4.0
+version: 0.5.0
 date-released: 2026-08-18
 abstract: "A question-driven, evidence-traceable knowledge base covering cerebral amyloid angiopathy, brain arteriolosclerosis, mixed cerebral small vessel disease, diagnostic criteria, biomarkers, mechanisms, and research gaps."
 keywords:

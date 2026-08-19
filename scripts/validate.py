@@ -104,13 +104,14 @@ def main() -> int:
         checks["catalog_count_consistent"] = expected_total == catalog.get("total_records") == len(catalog.get("records", []))
         checks["catalog_ids_unique"] = len({record["id"] for record in catalog["records"]}) == len(catalog["records"])
 
-    required_site = ["index.html", "explore.html", "record.html", "learn.html", "methodology.html", "about.html", "assets/styles.css", "assets/app.js"]
+    required_site = ["index.html", "explore.html", "record.html", "learn.html", "pathways.html", "workbench.html", "methodology.html", "about.html", "assets/styles.css", "assets/app.js"]
     checks["site_complete"] = all((ROOT / "docs" / item).exists() for item in required_site)
+    checks["web_chapters_complete"] = len(list((ROOT / "docs" / "chapters").glob("*.html"))) == 11
     checks["figures_present"] = len(list((ROOT / "docs" / "assets" / "figures").glob("*.png"))) == 14
     checks["reading_edition_present"] = any((ROOT / "downloads").glob("*.docx"))
 
     broken_links: list[str] = []
-    for html_path in (ROOT / "docs").glob("*.html"):
+    for html_path in (ROOT / "docs").rglob("*.html"):
         parser = LinkParser()
         parser.feed(html_path.read_text(encoding="utf-8"))
         for target in parser.targets:

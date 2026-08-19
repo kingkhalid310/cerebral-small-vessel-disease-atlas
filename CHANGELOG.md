@@ -1,5 +1,25 @@
 # Changelog
 
+## v0.5 — Learning edition — 2026-08-18
+
+### Added
+
+- An 11-chapter web-native course generated from the maintained field guide.
+- Persistent chapter navigation, in-page tables of contents, previous/next reading, and device-local completion marks.
+- Eight guided entry pathways for beginners, CAA, arteriolosclerosis, criteria, differential reasoning, ARTS, MRI-autopsy design, and open-question discovery.
+- A criteria and tools workbench comparing STRIVE-2, Boston criteria v2.0, and ARTS by purpose, output, reference logic, strongest use, and dangerous misuse.
+- Evidence pages organized around conclusions, limitations, context, validation chains, and decisive next tests instead of raw CSV columns.
+
+### Changed
+
+- Rebuilt the visual system as a restrained editorial interface with smaller typography, denser information, and a reading-first hierarchy.
+- Reframed the home page around learning and reasoning rather than repository statistics.
+- Preserved the 202-record evidence library as the inspectable substrate beneath the course.
+
+### Boundary
+
+This is a product and presentation advance, not a new systematic search, meta-analysis, clinical validation, or autonomous literature-update system.
+
 ## v0.4 — Repository edition — 2026-08-18
 
 ### Added

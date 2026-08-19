@@ -1,15 +1,15 @@
 # Cerebral Small Vessel Disease Evidence Atlas
 
-[![Release](https://img.shields.io/badge/release-v0.4-173f35)](CHANGELOG.md)
+[![Release](https://img.shields.io/badge/release-v0.5-173f35)](CHANGELOG.md)
 [![Evidence records](https://img.shields.io/badge/evidence_records-61-426a5a)](data/source_registry.csv)
 [![Research questions](https://img.shields.io/badge/research_questions-40-b07d35)](data/research_questions.csv)
 [![Clinical use](https://img.shields.io/badge/clinical_use-educational_only-8c3d32)](DISCLAIMER.md)
 
 An evidence-traceable, question-driven knowledge base for cerebral small vessel disease, with focused coverage of cerebral amyloid angiopathy (CAA), brain arteriolosclerosis, mixed pathology, diagnostic criteria, imaging markers, biomarkers, mechanisms, and unresolved research problems.
 
-**Release:** v0.4  
-**Status:** curated scoping knowledge base; not a systematic review or clinical decision-support system  
-**Prepared website address:** `csvd.medics-global.com` (not yet activated)
+**Release:** v0.5
+**Status:** curated scoping knowledge base; not a systematic review or clinical decision-support system
+**Website:** [csvd.medics-global.com](https://csvd.medics-global.com/)
 
 ## Why this repository exists
 
@@ -27,7 +27,7 @@ It is designed to answer five questions:
 
 | If you want to... | Open... |
 |---|---|
-| Learn the field in sequence | [`content/guide/`](content/guide/) |
+| Learn the field in sequence | [Web-native 11-chapter course](https://csvd.medics-global.com/learn.html) or [`content/guide/`](content/guide/) |
 | See the central unresolved problems | [`data/research_questions.csv`](data/research_questions.csv) |
 | Inspect claim-level evidence | [`data/claims.csv`](data/claims.csv) and [`data/claim_evidence.csv`](data/claim_evidence.csv) |
 | Compare diagnostic approaches | [`data/diagnostic_profiles.csv`](data/diagnostic_profiles.csv) |
@@ -78,9 +78,10 @@ An imaging pattern may generate a candidate phenotype without constituting valid
 
 1. Edit the CSV registries or Markdown records.
 2. Run `python3 scripts/build_site_data.py` to regenerate the searchable catalog.
-3. Run `python3 scripts/validate.py`.
-4. Preview with `python3 scripts/serve.py`.
-5. Commit only after reading the generated validation summary.
+3. Run `python3 scripts/build_chapters.py` to regenerate the web-native course.
+4. Run `python3 scripts/validate.py`.
+5. Preview with `python3 scripts/serve.py`.
+6. Commit only after reading the generated validation summary.
 
 This workflow does **not** automate literature surveillance. Source discovery, screening, appraisal, and interpretation remain deliberate human editorial tasks.
 
@@ -99,4 +100,4 @@ Citation metadata are provided in [`CITATION.cff`](CITATION.cff). No reuse licen
 
 ## Version history
 
-v0.4 packages the v0.3 evidence model into a clean, searchable, website-ready repository. Earlier working releases remain outside this repository so its public history begins with a deliberate boundary.
+v0.5 turns the repository edition into a learning product: web-native chapters, guided pathways, a diagnostic-methods workbench, and human-readable evidence pages. v0.4 remains available through the repository history and release tag.
