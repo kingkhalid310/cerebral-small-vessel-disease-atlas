@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If this evidence atlas supports your work, please cite the repository release and the primary sources used for individual claims."
-title: "Cerebral Small Vessel Disease Evidence Atlas"
+message: "If this evidence guide supports your work, please cite the repository release and the primary sources used for individual claims."
+title: "Cerebral Small Vessel Disease Evidence Guide"
 type: dataset
 version: 0.6
 date-released: 2026-08-18
@@ -12,5 +12,5 @@ keywords:
   - neuroimaging
   - neuropathology
   - evidence synthesis
-repository-code: "https://github.com/kingkhalid310/cerebral-small-vessel-disease-atlas"
+repository-code: "https://github.com/kingkhalid310/cerebral-small-vessel-disease-evidence-guide"
 license: other

@@ -83,7 +83,7 @@ def main() -> None:
     payload = {
         "release": "v0.6",
         "generated": date.today().isoformat(),
-        "site_name": "Cerebral Small Vessel Disease Evidence Atlas",
+        "site_name": "Cerebral Small Vessel Disease Evidence Guide",
         "counts": counts,
         "total_records": len(records),
         "records": sorted(records, key=lambda item: (str(item["type"]), str(item["id"]))),

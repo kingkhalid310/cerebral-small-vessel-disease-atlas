@@ -38,7 +38,7 @@ A knowledge resource should never transform the presence of a microbleed into a 
 
 CAA creates one of the field's hardest competing-risk problems: preventing cardioembolic stroke while limiting recurrent intracranial hemorrhage. Evidence may come from observational cohorts, trials that excluded the highest-risk patients, or indirect populations. Risk scores built in general atrial fibrillation populations may not capture cSS or CAA severity.
 
-The atlas should present evidence by decision context rather than issue a single rule:
+The guide should present evidence by decision context rather than issue a single rule:
 
 - Primary prevention without established embolic indication.
 - Atrial fibrillation after ischemic stroke.
@@ -58,7 +58,7 @@ An association between low cholesterol and hemorrhage does not by itself establi
 
 The ESO guideline evaluates acute thrombolysis, antiplatelet treatment, blood-pressure management, progressive lacunar stroke, and longer-term prevention [[R063]]. The key conceptual point is that suspected lacunar stroke should not be denied evidence-based acute treatment solely because the lesion is small, while some cSVD-specific treatment questions remain supported by limited evidence.
 
-The original guideline tables and evidence profiles should be used for exact recommendations and certainty. This atlas summarizes the question structure, not bedside instructions.
+The original guideline tables and evidence profiles should be used for exact recommendations and certainty. This guide summarizes the question structure, not bedside instructions.
 
 ## 7. CAA manifestations and inflammation
 

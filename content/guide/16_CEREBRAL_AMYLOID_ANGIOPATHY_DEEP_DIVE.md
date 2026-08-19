@@ -51,7 +51,7 @@ CAA is a major cause of spontaneous lobar ICH in older adults. Hemorrhage locati
 
 ### Convexity subarachnoid hemorrhage and transient focal neurological episodes
 
-Small convexity subarachnoid hemorrhage and superficial siderosis can produce spreading positive or negative neurological symptoms. These episodes may mimic TIA, migraine aura, or focal seizure. Misclassification matters because reflex antithrombotic treatment based on a presumed ischemic TIA may increase risk in an active hemorrhagic syndrome. The atlas teaches the distinction but does not provide patient-specific treatment advice [[R004]] [[R009]].
+Small convexity subarachnoid hemorrhage and superficial siderosis can produce spreading positive or negative neurological symptoms. These episodes may mimic TIA, migraine aura, or focal seizure. Misclassification matters because reflex antithrombotic treatment based on a presumed ischemic TIA may increase risk in an active hemorrhagic syndrome. The guide teaches the distinction but does not provide patient-specific treatment advice [[R004]] [[R009]].
 
 ### Cognitive impairment
 

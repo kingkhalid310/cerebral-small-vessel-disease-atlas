@@ -39,7 +39,7 @@ CHAPTERS = [
     ("04_DEBATES_HYPOTHESES_OPEN_QUESTIONS.md", "15", "Debates and open questions", "Mechanisms", "18 min"),
     ("11_DIAGNOSTIC_PROFILES.md", "16", "Diagnostic evidence profiles", "Diagnosis", "6 min"),
     ("12_WORKED_CASES.md", "17", "Worked reasoning cases", "Reasoning", "5 min"),
-    ("09_CONTRADICTION_ATLAS.md", "18", "Contradiction and falsification", "Evidence", "8 min"),
+    ("09_CONTRADICTION_MAP.md", "18", "Contradiction and falsification", "Evidence", "8 min"),
     ("08_EVIDENCE_COMPLETENESS.md", "19", "Evidence completeness", "Evidence", "6 min"),
     ("10_COHORT_LINEAGE.md", "20", "Cohort lineage", "Evidence", "4 min"),
     ("05_RESEARCH_AGENDA_V03.md", "21", "Research agenda", "Research", "10 min"),
@@ -163,7 +163,7 @@ def build_learning_home(nav: list[tuple[str, str, str, str, str]]) -> None:
             cards.append(f'<a class="card course-card" href="chapters/{item_slug}.html"><span class="course-number">{number}</span><div><span class="number">{html.escape(stage.upper())} · {depth} · {html.escape(reading.upper())}</span><h3>{html.escape(item_title)}</h3><p>Open the complete chapter with in-page navigation, point-of-claim sources, and a self-paced reading marker.</p></div></a>')
         sections.append(f'<section class="section{(" alt" if len(sections) % 2 else "")}"><div class="container"><div class="section-heading"><div><p class="eyebrow">{part} · {html.escape(label)}</p><h2>{html.escape(title)}</h2></div><p>{html.escape(description)}</p></div><div class="grid-3">{"".join(cards)}</div></div></section>')
     total_minutes = sum(int(re.search(r"\d+", item[4]).group()) for item in nav)
-    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A synchronized 24-module curriculum in cerebral small vessel disease."><title>Learn · cSVD Evidence Atlas</title><link rel="stylesheet" href="assets/styles.css"></head><body><div id="site-header"></div><main id="main"><section class="page-hero"><div class="container"><p class="eyebrow">The depth and coverage course · {RELEASE}</p><h1>Build a mental model, then inspect the evidence.</h1><p>Twenty-four modules move from normal vessel biology through CAA, brain arteriolosclerosis, STRIVE-2, neuropathology, mixed disease, clinical outcomes, management evidence, the wider disease spectrum, and research design. Approximately {total_minutes} minutes for a first pass; every source marker opens the verification record.</p><div class="hero-actions"><a class="button" href="chapters/{nav[0][0]}.html">Start chapter 1</a><a class="button secondary" href="https://github.com/kingkhalid310/cerebral-small-vessel-disease-atlas/raw/main/downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.6.docx">Download the synchronized reading edition</a><a class="button secondary" href="coverage.html">Inspect topic coverage</a></div></div></section>{''.join(sections)}</main><div id="site-footer"></div><script src="assets/app.js"></script><script>Atlas.shell('learn')</script></body></html>'''
+    page = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="A synchronized 24-module curriculum in cerebral small vessel disease."><title>Learn · cSVD Evidence Guide</title><link rel="stylesheet" href="assets/styles.css"></head><body><div id="site-header"></div><main id="main"><section class="page-hero"><div class="container"><p class="eyebrow">The depth and coverage course · {RELEASE}</p><h1>Build a mental model, then inspect the evidence.</h1><p>Twenty-four modules move from normal vessel biology through CAA, brain arteriolosclerosis, STRIVE-2, neuropathology, mixed disease, clinical outcomes, management evidence, the wider disease spectrum, and research design. Approximately {total_minutes} minutes for a first pass; every source marker opens the verification record.</p><div class="hero-actions"><a class="button" href="chapters/{nav[0][0]}.html">Start chapter 1</a><a class="button secondary" href="https://github.com/kingkhalid310/cerebral-small-vessel-disease-evidence-guide/raw/main/downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.6.docx">Download the synchronized reading edition</a><a class="button secondary" href="coverage.html">Inspect topic coverage</a></div></div></section>{''.join(sections)}</main><div id="site-footer"></div><script src="assets/app.js"></script><script>Guide.shell('learn')</script></body></html>'''
     (ROOT / "docs" / "learn.html").write_text(page, encoding="utf-8")
 
 
@@ -193,7 +193,7 @@ def main() -> None:
         )
         page = f'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="{html.escape(title)} — a chapter in the cSVD Evidence Atlas."><title>{html.escape(title)} · cSVD Atlas</title>
+<meta name="description" content="{html.escape(title)} — a chapter in the cSVD Evidence Guide."><title>{html.escape(title)} · cSVD Evidence Guide</title>
 <link rel="stylesheet" href="../assets/styles.css"></head><body>
 <div id="site-header"></div><main id="main" class="reader-layout">
 <aside class="reader-sidebar"><a class="reader-home" href="../learn.html">← Learning home</a><p class="sidebar-label">The core course</p><nav aria-label="Course chapters">{chapter_nav}</nav></aside>
@@ -201,7 +201,7 @@ def main() -> None:
 <div class="chapter-toc"><strong>In this chapter</strong>{''.join(f'<a href="#{a}">{html.escape(label)}</a>' for a,label in toc)}</div>
 <div class="prose">{body}</div>
 <nav class="chapter-pager" aria-label="Chapter navigation"><a href="{previous_link}"><small>Previous</small><strong>{html.escape(previous_label)}</strong></a><a class="next" href="{next_link}"><small>Next</small><strong>{html.escape(next_label)}</strong></a></nav>
-</article></main><div id="site-footer"></div><script src="../assets/app.js"></script><script>Atlas.shell('learn','../'); Atlas.progress();</script></body></html>'''
+</article></main><div id="site-footer"></div><script src="../assets/app.js"></script><script>Guide.shell('learn','../'); Guide.progress();</script></body></html>'''
         (OUTPUT / f"{slug(filename)}.html").write_text(page, encoding="utf-8")
     build_learning_home(nav)
     print(f"Built {len(CHAPTERS)} web-native chapters and the synchronized course home.")

@@ -2,7 +2,7 @@
 
 ## Why the broader spectrum matters
 
-The atlas focuses on sporadic CAA and brain arteriolosclerosis, but a credible cSVD resource must show where that focus ends. Genetic, inflammatory, infectious, venous, toxic, radiation-associated, metabolic, and other disorders can produce overlapping imaging and clinical phenotypes. The purpose of this chapter is orientation and differential structure, not comprehensive diagnosis [[R036]] [[R064]].
+The guide focuses on sporadic CAA and brain arteriolosclerosis, but a credible cSVD resource must show where that focus ends. Genetic, inflammatory, infectious, venous, toxic, radiation-associated, metabolic, and other disorders can produce overlapping imaging and clinical phenotypes. The purpose of this chapter is orientation and differential structure, not comprehensive diagnosis [[R036]] [[R064]].
 
 > Young age, family history, unusual systemic features, recurrent strokes, or a striking MRI pattern should raise a genetic question. None is individually required, and common vascular risks do not exclude a monogenic disorder.
 
@@ -54,7 +54,7 @@ CAA-ri has its own clinicoradiologic evidence base [[R008]] [[R057]] [[R061]]. I
 
 ## 9. Venous and venular disease
 
-Small venules and veins contribute to drainage and white-matter physiology. Venous collagenosis and other venular changes have been proposed in age-related white-matter disease, but terminology, sampling, and in-vivo markers are less mature than arterial frameworks. A comprehensive future atlas needs dedicated venous pathology and imaging review rather than treating the venous side as an afterthought.
+Small venules and veins contribute to drainage and white-matter physiology. Venous collagenosis and other venular changes have been proposed in age-related white-matter disease, but terminology, sampling, and in-vivo markers are less mature than arterial frameworks. A comprehensive future edition needs dedicated venous pathology and imaging review rather than treating the venous side as an afterthought.
 
 ## 10. Toxic, radiation, treatment, and infection-associated injury
 

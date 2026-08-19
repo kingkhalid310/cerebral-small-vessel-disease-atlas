@@ -609,9 +609,9 @@ def add_claim_ledger(doc, sources, studies, claims, edges, nums):
             base.set_paragraph_spacing(p, after=3, line=1.15)
 
 
-def add_study_atlas(doc, sources, studies):
+def add_study_library(doc, sources, studies):
     source_by_ref = {s["ref_id"]: s for s in sources}
-    doc.add_paragraph("Appendix I. Pivotal Study Atlas", style="Heading 1")
+    doc.add_paragraph("Appendix I. Pivotal Study Library", style="Heading 1")
     p = doc.add_paragraph(); base.add_inline(p, "These records distinguish direct full-text extraction from abstract or citation-level coverage. Appraisals are provisional and should be duplicated before publication.")
     for s in studies:
         doc.add_paragraph(f"{s['study_id']} | {s['short_name']}", style="Heading 3")
@@ -657,8 +657,8 @@ def add_tool_registry(doc, sources, tools):
                 r = p.add_run(ref_id); base.set_run_font(r, size=9.5)
 
 
-def add_question_atlas(doc, questions):
-    doc.add_paragraph("Appendix A. Research Question and Completeness Atlas", style="Heading 1")
+def add_question_map(doc, questions):
+    doc.add_paragraph("Appendix A. Research Question and Completeness Map", style="Heading 1")
     p = doc.add_paragraph(); base.add_inline(p, "The question is the maintained unit. Each record states the current answer boundary, the missing piece, and the most decisive feasible design. Critical gap means important and unresolved - not unimportant.")
     current_domain = None
     for q in questions:
@@ -679,8 +679,8 @@ def add_question_atlas(doc, questions):
         base.set_run_font(r, size=9, color=MUTED, italic=True)
 
 
-def add_hypothesis_atlas(doc, hypotheses):
-    doc.add_paragraph("Appendix B. Contradiction and Falsification Atlas", style="Heading 1")
+def add_hypothesis_map(doc, hypotheses):
+    doc.add_paragraph("Appendix B. Contradiction and Falsification Map", style="Heading 1")
     p = doc.add_paragraph(); base.add_inline(p, "A useful hypothesis survives contact with its best counterevidence. These records prevent narrative enthusiasm from replacing a testable scientific claim.")
     for h in hypotheses:
         doc.add_paragraph(f"{h['hypothesis_id']} | {h['hypothesis']}", style="Heading 3")
@@ -695,7 +695,7 @@ def add_cohort_lineage(doc, cohorts, study_cohorts):
     links = defaultdict(list)
     for row in study_cohorts: links[row["cohort_id"]].append(row)
     doc.add_paragraph("Appendix C. Cohort Lineage and Independence", style="Heading 1")
-    p = doc.add_paragraph(); base.add_inline(p, "Multiple publications from one recruitment stream do not constitute independent replication. Use this atlas before counting consistency across papers.")
+    p = doc.add_paragraph(); base.add_inline(p, "Multiple publications from one recruitment stream do not constitute independent replication. Use this guide before counting consistency across papers.")
     for c in cohorts:
         doc.add_paragraph(f"{c['cohort_id']} | {c['name']}", style="Heading 3")
         for label, value in [("Recruitment", c["recruitment_context"]), ("Pathology", c["pathology_availability"]), ("Known reuse", c["known_reuse"]), ("Bias relevance", c["bias_relevance"]), ("Independence", c["independence_notes"])]:
@@ -855,7 +855,7 @@ def build_docx(sources, figures):
         (REL / "content" / "guide" / "04_DEBATES_HYPOTHESES_OPEN_QUESTIONS.md", None),
         (REL / "content" / "guide" / "11_DIAGNOSTIC_PROFILES.md", figures[11]),
         (REL / "content" / "guide" / "12_WORKED_CASES.md", None),
-        (REL / "content" / "guide" / "09_CONTRADICTION_ATLAS.md", figures[12]),
+        (REL / "content" / "guide" / "09_CONTRADICTION_MAP.md", figures[12]),
         (REL / "content" / "guide" / "08_EVIDENCE_COMPLETENESS.md", figures[9]),
         (REL / "content" / "guide" / "10_COHORT_LINEAGE.md", figures[10]),
         (REL / "content" / "guide" / "05_RESEARCH_AGENDA_V03.md", None),
@@ -869,15 +869,15 @@ def build_docx(sources, figures):
         if fig:
             add_figure(doc, fig, fig_no); fig_no += 1
 
-    add_question_atlas(doc, questions)
-    add_hypothesis_atlas(doc, hypotheses)
+    add_question_map(doc, questions)
+    add_hypothesis_map(doc, hypotheses)
     add_cohort_lineage(doc, cohorts, study_cohorts)
     add_diagnostic_profiles(doc, profiles)
     add_differential_matrix(doc, differential)
     add_worked_cases(doc, cases)
     add_update_queue(doc, queue)
     add_claim_ledger(doc, sources, studies, claims, edges, nums)
-    add_study_atlas(doc, sources, studies)
+    add_study_library(doc, sources, studies)
     add_tool_registry(doc, sources, tools)
     add_bibliography(doc, sources, nums)
     condense_hierarchy(doc)

@@ -1,4 +1,4 @@
-# Contradiction and Falsification Atlas
+# Contradiction and Falsification Map
 
 A useful hypothesis page contains the strongest case for the claim, the strongest challenge, alternative explanations, a falsifier, and a decisive experiment. Confidence is not a vote count.
 

@@ -1,4 +1,4 @@
-name: Validate evidence atlas
+name: Validate evidence guide
 
 on:
   push:

@@ -7,6 +7,7 @@
 - Added six guideline/consensus sources and point-of-claim source tokens that become direct links on the website and in Word.
 - Added an automatically generated source list to every linked chapter and a filterable coverage-map page.
 - Kept clinical and evidentiary boundaries explicit: educational use, manual literature stewardship, and no claim of systematic completeness.
+- Standardized the public identity as **Cerebral Small Vessel Disease Evidence Guide** across the website, repository metadata, citation record, Word edition, and local release structure.
 
 ## v0.5.1 — Synchronized edition — 2026-08-18
 

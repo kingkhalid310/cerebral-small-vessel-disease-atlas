@@ -8,7 +8,7 @@ The full interactive learning-graph vision below is not yet complete. Retrieval 
 
 ## Product thesis
 
-v0.6 should turn the atlas from a strong linear course plus evidence library into a research-learning environment. A reader should be able to enter at a concept, criterion, observation, paper, claim, controversy, or open question and see how it connects to the rest of the field.
+v0.6 should turn the guide from a strong linear course plus evidence library into a research-learning environment. A reader should be able to enter at a concept, criterion, observation, paper, claim, controversy, or open question and see how it connects to the rest of the field.
 
 The intended users are new laboratory members, neurology and neuroradiology trainees, cSVD researchers crossing into an unfamiliar subfield, research coordinators, and methodologists. It remains an educational and research resource, not a clinical decision system.
 

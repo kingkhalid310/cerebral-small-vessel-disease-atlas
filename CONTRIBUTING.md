@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for helping improve the Cerebral Small Vessel Disease Evidence Atlas.
+Thank you for helping improve the Cerebral Small Vessel Disease Evidence Guide.
 
 ## Suitable contributions
 

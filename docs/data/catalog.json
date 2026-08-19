@@ -1,7 +1,7 @@
 {
   "release": "v0.6",
   "generated": "2026-08-18",
-  "site_name": "Cerebral Small Vessel Disease Evidence Atlas",
+  "site_name": "Cerebral Small Vessel Disease Evidence Guide",
   "counts": {
     "question": 40,
     "claim": 24,
@@ -18596,10 +18596,10 @@
         {
           "label": "Next Action",
           "key": "next_action",
-          "value": "Add region-by-region pathology atlas"
+          "value": "Add region-by-region pathology reference"
         }
       ],
-      "search_text": "top012 topic caa pathology and severity sampling and capillary involvement complicate classification  caa essential top012 caa pathology and severity caa pathology deep 16-cerebral-amyloid-angiopathy-deep-dive essential r004;r005;r026 sampling and capillary involvement complicate classification add region-by-region pathology atlas"
+      "search_text": "top012 topic caa pathology and severity sampling and capillary involvement complicate classification  caa essential top012 caa pathology and severity caa pathology deep 16-cerebral-amyloid-angiopathy-deep-dive essential r004;r005;r026 sampling and capillary involvement complicate classification add region-by-region pathology reference"
     },
     {
       "id": "TOP013",

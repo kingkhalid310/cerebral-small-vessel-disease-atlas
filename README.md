@@ -1,4 +1,4 @@
-# Cerebral Small Vessel Disease Evidence Atlas
+# Cerebral Small Vessel Disease Evidence Guide
 
 [![Release](https://img.shields.io/badge/release-v0.6-173f35)](CHANGELOG.md)
 [![Evidence records](https://img.shields.io/badge/evidence_records-67-426a5a)](data/source_registry.csv)
@@ -62,7 +62,7 @@ It is designed to answer five questions:
 
 ## Evidence model
 
-The atlas separates observations from conclusions:
+The guide separates observations from conclusions:
 
 ```text
 source → study → evidence edge → claim → research question

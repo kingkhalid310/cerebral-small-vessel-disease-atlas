@@ -17,7 +17,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
 
 
 with socketserver.TCPServer(("127.0.0.1", PORT), Handler) as server:
-    print(f"Previewing the atlas at http://127.0.0.1:{PORT}")
+    print(f"Previewing the guide at http://127.0.0.1:{PORT}")
     try:
         server.serve_forever()
     except KeyboardInterrupt:

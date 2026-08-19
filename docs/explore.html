@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Search and filter the cSVD Evidence Atlas."><title>Explore · cSVD Evidence Atlas</title><link rel="stylesheet" href="assets/styles.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Search and filter the cSVD Evidence Guide."><title>Explore · cSVD Evidence Guide</title><link rel="stylesheet" href="assets/styles.css"></head>
 <body>
   <div id="site-header"></div>
   <main id="main">
@@ -19,15 +19,15 @@
   <div id="site-footer"></div>
   <script src="assets/app.js"></script>
   <script>
-    Atlas.shell('explore');
+    Guide.shell('explore');
     const controls = ['search','type','status','domain'].reduce((o,id)=>(o[id]=document.getElementById(id),o),{});
     let records = [];
-    const option = (value,label=value) => `<option value="${Atlas.esc(value)}">${Atlas.esc(label)}</option>`;
+    const option = (value,label=value) => `<option value="${Guide.esc(value)}">${Guide.esc(label)}</option>`;
     const unique = (source,key) => [...new Set(source.map(r=>r[key]).filter(Boolean))].sort((a,b)=>a.localeCompare(b));
     function updateFacets() {
       const source = controls.type.value ? records.filter(r=>r.type===controls.type.value) : records;
       const previousStatus = controls.status.value; const previousDomain = controls.domain.value;
-      controls.status.innerHTML = '<option value="">All evidence states</option>' + unique(source,'state').map(v=>option(v,Atlas.human(v))).join('');
+      controls.status.innerHTML = '<option value="">All evidence states</option>' + unique(source,'state').map(v=>option(v,Guide.human(v))).join('');
       controls.domain.innerHTML = '<option value="">All domains</option>' + unique(source,'domain').map(v=>option(v)).join('');
       if ([...controls.status.options].some(o=>o.value===previousStatus)) controls.status.value=previousStatus;
       if ([...controls.domain.options].some(o=>o.value===previousDomain)) controls.domain.value=previousDomain;
@@ -36,19 +36,19 @@
       const q = controls.search.value.trim().toLowerCase();
       const filtered = records.filter(r => (!q || r.search_text.includes(q)) && (!controls.type.value || r.type===controls.type.value) && (!controls.status.value || r.state===controls.status.value) && (!controls.domain.value || r.domain===controls.domain.value));
       document.getElementById('result-count').textContent = `${filtered.length} of ${records.length} records`;
-      document.getElementById('results').innerHTML = filtered.length ? filtered.map(r=>`<a class="card record-card" href="record.html?id=${encodeURIComponent(r.id)}"><div>${Atlas.badge(Atlas.human(r.type))}${Atlas.badge(r.state)}<h3>${Atlas.esc(r.id)} · ${Atlas.esc(r.title)}</h3><p>${Atlas.esc(r.summary || 'Open the complete structured record.')}</p></div><div class="meta">${Atlas.badge(r.domain)}${Atlas.badge(r.priority)}</div></a>`).join('') : '<div class="empty">No records match these filters. Try a broader term or clear the filters.</div>';
+      document.getElementById('results').innerHTML = filtered.length ? filtered.map(r=>`<a class="card record-card" href="record.html?id=${encodeURIComponent(r.id)}"><div>${Guide.badge(Guide.human(r.type))}${Guide.badge(r.state)}<h3>${Guide.esc(r.id)} · ${Guide.esc(r.title)}</h3><p>${Guide.esc(r.summary || 'Open the complete structured record.')}</p></div><div class="meta">${Guide.badge(r.domain)}${Guide.badge(r.priority)}</div></a>`).join('') : '<div class="empty">No records match these filters. Try a broader term or clear the filters.</div>';
       const params = new URLSearchParams(); Object.entries(controls).forEach(([key,el])=>{if(el.value) params.set(key,el.value)}); history.replaceState(null,'',`${location.pathname}${params.toString()?'?'+params:''}`);
     }
-    Atlas.catalog().then(data => {
+    Guide.catalog().then(data => {
       records = data.records;
-      controls.type.innerHTML += Object.keys(data.counts).filter(k=>data.counts[k]).map(k=>option(k,`${Atlas.human(k)} (${data.counts[k]})`)).join('');
+      controls.type.innerHTML += Object.keys(data.counts).filter(k=>data.counts[k]).map(k=>option(k,`${Guide.human(k)} (${data.counts[k]})`)).join('');
       const params = new URLSearchParams(location.search); if(params.has('type')) controls.type.value=params.get('type'); updateFacets();
       ['search','status','domain'].forEach(key=>{if(params.has(key)) controls[key].value=params.get(key)});
       controls.type.addEventListener('input',()=>{controls.status.value='';controls.domain.value='';updateFacets();render()});
       ['search','status','domain'].forEach(key=>controls[key].addEventListener('input',render));
       document.getElementById('reset').addEventListener('click',()=>{Object.values(controls).forEach(el=>el.value='');updateFacets();render();controls.search.focus()});
       render();
-    }).catch(error => document.getElementById('results').innerHTML=`<div class="empty">${Atlas.esc(error.message)} Preview this site through a local web server rather than opening the file directly.</div>`);
+    }).catch(error => document.getElementById('results').innerHTML=`<div class="empty">${Guide.esc(error.message)} Preview this site through a local web server rather than opening the file directly.</div>`);
   </script>
 </body>
 </html>

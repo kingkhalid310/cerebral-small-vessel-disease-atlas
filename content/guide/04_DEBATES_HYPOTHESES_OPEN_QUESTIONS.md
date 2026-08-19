@@ -237,7 +237,7 @@ Report the composite and all components. Predefine missing-data handling. Test w
 | CAA includes impaired perivascular clearance | Moderate | Anatomy, experimental tracers, PVS-pathology spatial evidence | Human flow direction and temporal order unresolved | Longitudinal dynamic human study |
 | Physiology changes before hemorrhage | Moderate-high in hereditary CAA; moderate in sporadic CAA | Hereditary trajectories and CVR data | Extrapolation to sporadic disease | Presymptomatic sporadic biomarkers |
 | BBB leakage participates in CAA remodeling | Moderate | Localized histopathology | Small cross-sectional samples | MRI-to-whole-vessel pathology |
-| Lobar CMBs are pathognomonic of CAA | Low as an absolute claim | Strong group-level distribution | Arteriolosclerosis false positives | Lesion-level MRI-pathology atlas |
+| Lobar CMBs are pathognomonic of CAA | Low as an absolute claim | Strong group-level distribution | Arteriolosclerosis false positives | Lesion-level MRI-pathology study |
 | B-ASC is a single homogeneous pathology | Low | Common grading systems | Marked morphologic/regional heterogeneity | Molecular-spatial subtyping |
 | ARTS measures clinically meaningful B-ASC risk | Moderate and strengthening | Pathology-linked development, reproducibility, cognitive/outcome associations | Generalizability and causal responsiveness | Prospective diverse intervention cohorts |
 | Inflammation is purely harmful in CAA | Low | CAA-ri/ARIA injury | Clearance may also be protective | Stage/cell-specific perturbation |
