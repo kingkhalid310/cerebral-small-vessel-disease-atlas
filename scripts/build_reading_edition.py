@@ -899,7 +899,7 @@ def write_summary(sources, screen, figures, out):
         "confidence_counts": Counter(c["confidence"] for c in claims),
         "relationship_counts": Counter(e["relationship"] for e in edges),
         "extraction_counts": Counter(s["extraction_status"] for s in studies),
-        "docx": str(out),
+        "docx": out.relative_to(REL).as_posix(),
         "caveat": "Curated scoping evidence map; not a completed systematic review; appraisals are provisional single-reviewer judgments.",
     }
     serializable = {k: dict(v) if isinstance(v, Counter) else v for k, v in summary.items()}
