@@ -1,9 +1,9 @@
 {
   "release_version": "0.5.1",
-  "product_version": "0.5",
+  "product_version": "0.5.1",
   "release_date": "2026-08-18",
   "chapter_count": 15,
-  "canonical_digest": "98a14a88650e12df68b04b12c20ccdfd99bec67c62775789e9d26bab727b63f6",
+  "canonical_digest": "940db1273331f7c1e0a86b9ced31a9f37c7bbde39e711b9102125ecdb78598ee",
   "canonical_files": {
     "content/guide/00_HOW_TO_THINK.md": "52c6ce252d949c6b4036104c63a74f2131e8c44c0cbf7af71377b0a30bfdabb1",
     "content/guide/01_FIELD_PRIMER_V03.md": "9ffba91bbb917b8205ac5d9a6d311932177869221c28cb00dcc4ed366b0364b5",
@@ -43,17 +43,17 @@
     "governance/METHODS.md": "f006a5a0cead7711f60572e8e704ea0ebca2eea1ccb0fdfc570973dde9f7f94f",
     "governance/QUESTION_GOVERNANCE.md": "05fbf2612db36e79f8161733841a72597c1c53e5d1109b98833578535bd963cc",
     "governance/RELEASE_CHECKLIST.md": "9c9a480545b1ebee1f537dc84519be27337c09a4cc4c151f3cba6c70bca96d85",
-    "release/release.json": "108454d3f57fdf5d54ecfd0c5091739a50368e9f519affb807242ffe7821a677",
+    "release/release.json": "c89f51e7dd903080aa7cd0a4f07b1b8108e699ec899103ba486bc4b624b7795f",
     "requirements-docs.txt": "8f2a9261e987978a1af5a94af3922af988de507495531f0f685d34b7f3dcc895",
     "schemas/catalog.schema.json": "859d3bf5c76dc1b25d98b1b2bd8d615a0eff98bd99d39d92c18fb1207c758523",
-    "scripts/build_chapters.py": "51fa09bacf4fc9911f4def68f4ce2e83173951dd770bb32eea25eba0295b4876",
-    "scripts/build_reading_edition.py": "1a8273bb2b3ab758674fe839d43aa4d4dfcc91b393fa4877034000374f822fe8",
-    "scripts/build_site_data.py": "a13984c3839bb4b7525bea34cbfc8d6eb2abf6bbcbf0fd06db07626a64a14bbe",
+    "scripts/build_chapters.py": "4146c2eef6fc158127db3abca77d01e7e794c96b0d45a8134a33c8ee0ea1c1d5",
+    "scripts/build_reading_edition.py": "e2ee4e5377d668301823990565dcd1b28ca70c40b30054e003f30e5bfcc1e175",
+    "scripts/build_site_data.py": "fd4574d3031b5b10185724a2b659d0e6dc7f167a18d0542ce3a99f92dc9f1877",
     "scripts/docx_base.py": "0d7b860fc65c42f6921555a537850a4a46b849ee240771ad36fa8efe00ea8ce0",
     "scripts/sync_release.py": "2c38989a64b1b145f1b2dd9b3fc4a41f412ca1d1a03849bcead3eb6ac84b9db9",
-    "scripts/validate.py": "a8b6c39ac46ebb52af75eab4f1af1cf9ddf5ae577ab4d47ee499d2d02066fd62"
+    "scripts/validate.py": "660210805766feb2bedefbbb102397a348196c5ac3f8a45791d0498a64f28673"
   },
-  "published_digest": "68b4c9f175c05104ce851640fb4b58322330759e0eedd83a2e8665895563a8da",
+  "published_digest": "cf2239a3016e1fefc01813fbcdb7ec26a8fadd27503ea36f0d98af96ead97753",
   "published_files": {
     "docs/chapters/00-how-to-think.html": "f2f90332c8ede8f053c135e8aec4815d9b654a53b4e431b613ba0fd9ed18be8c",
     "docs/chapters/01-field-primer.html": "7c08e871419a5174b9d1897e9cbb37c33a781e8038c68ca70dc84acef4661ced",
@@ -70,12 +70,12 @@
     "docs/chapters/12-worked-cases.html": "75f2a03b5cd8bc20afa8a349c303b4215c4ae6d7ff239c17c0209398d78a20d3",
     "docs/chapters/13-living-update-workflow.html": "ebfe0e96e9c065e8cbbc10682f6685ad9dbf79e80f12ce1baee529dbf234cbdf",
     "docs/chapters/14-reading-path.html": "69bfed2763efc752db4329fb8abab503476c7a27194bc85c55ee2656822f71fa",
-    "docs/data/catalog.json": "e3d5df09c6b3e4199694540dbc8951db22931fa038336b34e87e07abfb53c26a",
-    "docs/index.html": "523c7759e3052171ac80fa2ad1fb3a7930ea1c6b88f79d9d07cc6da6847d5486",
-    "docs/learn.html": "0cff175c12fc6473b9a4ab1a2cd37845698443bcea549fdc07b588615dde0211",
-    "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx": "bb2f0506d83f201bee2c378389d2a0183f90c1738639cb2cfa795b12605fe18d",
-    "release/reading_edition_summary.json": "e452078fd19b9e58c45ae8c95bfef826d9030a0a2dbf4a408aacafab27afa184"
+    "docs/data/catalog.json": "f97f25402529fc844c5ffd15588ff3f2eea82ab3fe5104510bef9f03a4304f25",
+    "docs/index.html": "baf9f95efeeb12d59c7d0c650f0cee9166052ef27ba36e90c479abbf6b5fe434",
+    "docs/learn.html": "7cd2a55ecf472fbde911ae7b6cb9d97a97c55d40e87780fd7ec1f5b1c2964904",
+    "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx": "c9d1911618f3ebad5e3e461567ae81675e98b2e0a869d954beacede4ea287501",
+    "release/reading_edition_summary.json": "8c42e9a088ec22123c1f4300f50734a1cdb86f703efc30e446aa270f81d9fe90"
   },
-  "generated_at_utc": "2026-08-19T01:28:37+00:00",
+  "generated_at_utc": "2026-08-19T01:33:43+00:00",
   "status": "synchronized"
 }

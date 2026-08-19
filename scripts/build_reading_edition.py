@@ -23,7 +23,7 @@ REL = Path(__file__).resolve().parents[1]
 KB = REL
 DATA = REL / "data"
 FIG = REL / "docs" / "assets" / "figures"
-OUT = REL / "downloads" / "Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx"
+OUT = REL / "downloads" / "Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx"
 
 PYTHON = "/Users/khalidsaifullah/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12"
 
@@ -427,7 +427,7 @@ def make_figures() -> list[dict[str, str]]:
     arrow(d, (995, 500), (1118, 500), width=7)
     specs.append(("figure_13_hypothesis_anatomy.png", im, "Five-part hypothesis framework including supporting evidence, challenges, alternatives, falsifier, and decisive experiment."))
 
-    im, d = canvas("v0.5 synchronized knowledge architecture", "One source of truth; document, repository, and website views")
+    im, d = canvas("v0.5.1 synchronized knowledge architecture", "One source of truth; document, repository, and website views")
     rounded_box(d, (75, 275, 365, 585), "Structured records", "Sources, studies, questions, claims, cohorts, tools", "#E9F1F8")
     rounded_box(d, (480, 275, 770, 585), "Evidence graph", "Relationships, confidence, provenance, update history", "#E8F4EC")
     views = [("Learner", 885, 155), ("Researcher", 1220, 155), ("Methodologist", 885, 515), ("Clinician education", 1220, 515)]
@@ -517,7 +517,7 @@ def setup_page_v03(doc: Document):
     fp = section.footer.paragraphs[0]
     for run in fp.runs:
         run.text = ""
-    r = fp.add_run("Evidence Guide v0.5  |  ")
+    r = fp.add_run("Evidence Guide v0.5.1  |  ")
     base.set_run_font(r, size=8.5, color=MUTED)
     base.add_page_number(fp)
 
@@ -535,7 +535,7 @@ def add_cover_v03(doc: Document):
     r = p.add_run("A question-driven learning and research system with cohort lineage, diagnostic validation profiles, falsifiable hypotheses, worked reasoning cases, and a living-update queue.")
     base.set_run_font(r, size=11, color=INK)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER; p.paragraph_format.space_before = Pt(70)
-    r = p.add_run("Version 0.5 | 18 August 2026"); base.set_run_font(r, size=10, color=MUTED, bold=True)
+    r = p.add_run("Version 0.5.1 | 18 August 2026"); base.set_run_font(r, size=10, color=MUTED, bold=True)
     p = doc.add_paragraph(); p.alignment = WD_ALIGN_PARAGRAPH.CENTER
     r = p.add_run("Educational and research use - not patient-specific clinical guidance"); base.set_run_font(r, size=9.5, color=MUTED, italic=True)
     doc.add_page_break()
@@ -546,7 +546,7 @@ def add_cover_v03(doc: Document):
 def add_release_snapshot(doc, sources, studies, claims, edges, tools, questions, cohorts, profiles, hypotheses):
     doc.add_paragraph("Release snapshot", style="Heading 1")
     p = doc.add_paragraph()
-    base.add_inline(p, "Version 0.5 is a synchronized question-driven learning and evidence system, not a completed systematic review. The Word edition, repository records, and website are generated from the same maintained chapters and evidence tables.")
+    base.add_inline(p, "Version 0.5.1 is a synchronized question-driven learning and evidence system, not a completed systematic review. The Word edition, repository records, and website are generated from the same maintained chapters and evidence tables.")
     rows = [
         ("Scholarly sources", str(len(sources)), "Curated; citation-only and extracted records are distinguishable"),
         ("Structured pivotal studies", str(len(studies)), "Design, population, result, limitations, and provisional appraisal"),
@@ -824,7 +824,7 @@ def build_docx(sources, figures):
     cases = read_csv(DATA / "use_cases.csv")
     queue = read_csv(DATA / "update_queue.csv")
     doc = Document()
-    doc.core_properties.title = "Cerebral Small Vessel Disease Question-Driven Evidence Guide v0.5"
+    doc.core_properties.title = "Cerebral Small Vessel Disease Question-Driven Evidence Guide v0.5.1"
     doc.core_properties.subject = "CAA, brain arteriolosclerosis, evidence completeness, contradictions, diagnostic validation, and research design"
     doc.core_properties.author = ""
     doc.core_properties.keywords = "cerebral small vessel disease; CAA; arteriolosclerosis; research questions; cohort lineage; falsification; Boston criteria; ARTS"
@@ -883,7 +883,7 @@ def write_summary(sources, screen, figures, out):
     edges = read_csv(DATA / "claim_evidence.csv")
     tools = read_csv(DATA / "tools.csv")
     summary = {
-        "release": "v0.5",
+        "release": "v0.5.1",
         "date": "2026-08-18",
         "sources": len(sources),
         "screening_records": len(screen),

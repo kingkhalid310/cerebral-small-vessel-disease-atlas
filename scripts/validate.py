@@ -108,7 +108,7 @@ def main() -> int:
     checks["site_complete"] = all((ROOT / "docs" / item).exists() for item in required_site)
     checks["web_chapters_complete"] = len(list((ROOT / "docs" / "chapters").glob("*.html"))) == 15
     checks["figures_present"] = len(list((ROOT / "docs" / "assets" / "figures").glob("*.png"))) == 14
-    reading_edition = ROOT / "downloads" / "Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx"
+    reading_edition = ROOT / "downloads" / "Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx"
     checks["reading_edition_present"] = reading_edition.exists() and reading_edition.stat().st_size > 0
 
     broken_links: list[str] = []

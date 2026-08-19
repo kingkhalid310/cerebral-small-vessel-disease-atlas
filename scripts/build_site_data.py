@@ -80,7 +80,7 @@ def main() -> None:
             })
 
     payload = {
-        "release": "v0.5",
+        "release": "v0.5.1",
         "generated": date.today().isoformat(),
         "site_name": "Cerebral Small Vessel Disease Evidence Atlas",
         "counts": counts,

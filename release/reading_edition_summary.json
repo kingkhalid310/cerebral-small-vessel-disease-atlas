@@ -1,5 +1,5 @@
 {
-  "release": "v0.5",
+  "release": "v0.5.1",
   "date": "2026-08-18",
   "sources": 61,
   "screening_records": 61,
@@ -32,6 +32,6 @@
     "citation_only": 2,
     "abstract_plus_web_extracted": 1
   },
-  "docx": "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx",
+  "docx": "downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx",
   "caveat": "Curated scoping evidence map; not a completed systematic review; appraisals are provisional single-reviewer judgments."
 }

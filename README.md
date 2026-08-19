@@ -27,7 +27,7 @@ It is designed to answer five questions:
 
 | If you want to... | Open... |
 |---|---|
-| Learn the field in sequence | [Web-native 15-chapter course](https://csvd.medics-global.com/learn.html), [Word reading edition](downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.docx), or [`content/guide/`](content/guide/) |
+| Learn the field in sequence | [Web-native 15-chapter course](https://csvd.medics-global.com/learn.html), [Word reading edition](downloads/Cerebral_Small_Vessel_Disease_Evidence_Guide_v0.5.1.docx), or [`content/guide/`](content/guide/) |
 | See the central unresolved problems | [`data/research_questions.csv`](data/research_questions.csv) |
 | Inspect claim-level evidence | [`data/claims.csv`](data/claims.csv) and [`data/claim_evidence.csv`](data/claim_evidence.csv) |
 | Compare diagnostic approaches | [`data/diagnostic_profiles.csv`](data/diagnostic_profiles.csv) |
